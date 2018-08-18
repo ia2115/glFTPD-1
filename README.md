@@ -1,10 +1,10 @@
 # WLGLFTPD
-![Screenshot](archive/wlglftpd-install.gif)
+![Screenshot](archive/wglandwpz.gif)
 
 #### README
                                                                          
 Automated script to install glftpd togheter with a realtime crc addon from pzs-ng repo, this script has been tested and verified on machines with following distros: 
-Gentoo, Debian & Ubuntu..Feel free to develop this script for other distros for a wider and better support.
+Gentoo.. (glftpd autosetup works for: Debian & Ubuntu)..Feel free to develop this script for other distros for a wider and better support.
 If you will add support for other distros please contact me so i can add support for more distros into this script. Thanks alot..
 
 I store scripts and other stuff in this repository aswell. Scripts in glftpd_scripts has not been developed by me. Greetings to everyone that have been around during
