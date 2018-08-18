@@ -10,6 +10,10 @@ If you will add support for other distros please contact me so i can add support
 I store scripts and other stuff in this repository aswell. Scripts in glftpd_scripts has not been developed by me. Greetings to everyone that have been around during
 the years and contributed with so many good scripts to glFTPd and of course to the legends that keeps the glFTPd and pzs-ng projects alive..
 
+Please notice the "0day" release was not a real 0day release from -DVT it was just a random path with crc files so i could use it as a preview in my gif file 
+so no file/release/path has ever been real in my videos they are allways "fake" and used to show how the tool works for the real gangsters out there. So NEVER  blame me for 
+this, k thx.. 
+
 Sharing is caring, have fun.
 
 #### HOWTO
