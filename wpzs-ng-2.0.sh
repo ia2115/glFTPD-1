@@ -100,8 +100,6 @@ fi
 echo -e "[+] Please wait, we are now downloading pzs-ng"
    git clone $PZSNG_SOURCE 2> /dev/null
 echo -e "[+] \e[1;32mSuccessfully\e[0m downloaded pzs-ng\n"
-echo "sed -i '17d'" | pv -qL 10 
-echo 'sed -i "17i \#define zip_dirs                     "\/site\/incoming\/0day\/" /opt/pzs-ng/zipscript/conf/zsconfig.h' | pv -qL 10
 sleep 1; 
  cd $PZSNG
 
