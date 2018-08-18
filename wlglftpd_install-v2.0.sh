@@ -91,7 +91,7 @@ EOF
 if [[ $EUID -ne 0 ]]; then
 banner_glftpd
     echo -e "---------------------------------------------------------------\n"
-    echo -e "       You must run this scrip with root privileges....\n" 2>&1
+    echo -e "       You must run this script with root privileges...\n" 2>&1
     echo -e "---------------------------------------------------------------\n"
    exit 1
 fi
