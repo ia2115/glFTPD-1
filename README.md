@@ -21,7 +21,7 @@ Sharing is caring, have fun.
     git clone https://github.com/wuseman/wglftpd
     cd glftpd
     chmod +x ./wglftpd_install-v2.0.sh
-    sh ./wlglftpd_install-v2.0.sh
+    sh ./wglftpd_install-v2.0.sh
   
     That's it 
 
