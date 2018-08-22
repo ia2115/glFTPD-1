@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2001_DE_DiVX.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">OFFiZiELLE DEUTSCHE DiVX REGELN 
+
+.ALLGEMEiN_____________________________________________________________________ 
+
+
+1. Der Rip muss komplett von der Gruppe stammen, es muessen Video und Audio 
+von derselben QUELLE kodiert worden sein. 
+
+2. Es muss ein DVD- oder direkt kopierter digital-TV-Rip sein (d.h. die Quelle 
+muss ein rein digital verarbeiter MPEG2-Stream sein). 
+
+3. Digital-TV-Rips duerfen kein Senderlogo oder sonst irgendwelche Einblendun- 
+gen enthalten. 
+
+4. Als KINOSTART wird der deutsche und nicht der Start im Produktionsland ge- 
+wertet, gab es jedoch keinen deutschen Kinostart, ist das Produktionsjahr 
+anzugeben (dies bezieht sich auch auf &#60;jahr> im Dateinamen der NFO). 
+
+5. Ein einminuetiges SAMPLE, welches aus dem releasten avi stammt (d.h. nicht 
+extra encoded wurde) muss in einem separaten Verzeichnis im Release ent- 
+halten sein. 
+
+6. Es muss per SBC encoded worden sein. Die Stats aus dem ersten Pass muessen 
+in einem separaten Verzeichnis im Release enthalten sein. 
+
+7. Die minimale/maximale X-AUFLOESUNG muss gecroppt 512/640 pixel betragen. 
+
+8. Die minimale/maximale AUDIOBITRATE muss 128/192 (C/ABR) oder 96-160/128-224 
+(Lame VBR) sein. Die Audioaufloesung betraegt 44khz @ 16bit. 
+
+9. Das Seitenverhaeltnis der Videoaufloesung darf maximal 5% von dem des DVD- 
+Bildes abweichen. Die X-Y-Werte der Aufloesung muessen div16 sein. 
+
+10. Ein Film kuerzer als 95 MINUTEN muss auf 700mb passen - ausgenommen sind 
+vollstaendig computeranimierte Filme (z.B. Toy Story, Antz, Shrek) und XXX. 
+
+11. Zulaessige Groessen der Release sind: 1CD, 1.5CD (so dass 2 solcher Release 
+auf 3 CDs passen) 2CD und 3CD (bei einem Film laenger als 200 Minuten). 
+
+12. Der ABSPANN muss in einem 1CD Release nicht vollstaendig enthalten sein, 
+jedoch soweit, dass erkennbar ist, dass der Film tatsaechlich geendet hat. 
+Falls im Abspann noch Filmszenen enthalten sind, muss dieser in gleichbe- 
+rechtigter Bitrate wie der eigentliche Film, soweit diese Szenen reichen, 
+kodiert werden. In einem 2CD+ Release muss der Abspann in voller Laenge 
+enthalten sein. 
+
+
+.BENENNUNG_____________________________________________________________________ 
+
+
+&#60;gruppe>-&#60;filmtitel>_&#60;cd#>.avi 1CD = gwl-pitch_black.avi 
+2CD = gwl-pitch_black_1.avi 
+gwl-pitch_black_2.avi 
+
+&#60;gruppe>-&#60;abkuerzung>&#60;cd#>.rar 1CD = gwl-pibl.rar 
+2CD = gwl-pib1.rar 
+gwl-pib2.rar 
+
+&#60;gruppe>-&#60;abkuerzung>&#60;cd#>.sfv 1CD = gwl-pibl.sfv 
+2CD = gwl-pib1.sfv 
+gwl-pib2.sfv 
+
+&#60;gruppe>-&#60;filmtitel>_(&#60;jahr> ).nfo = gwl-pitch_black_(2000).nfo 
+
+
+Die Benennung des Verzeichnisses ist in gewissen Grenzen beliebig. Ent- 
+halten sein muss jedoch: &#60;Filmtitel> DiVX German &#60;QUELLE> -&#60;GRUPPE> 
+
+Beispiele, Quelle = DVD: 
+
+Pitch.Black.DiVX.DVDRIP.German-GWL 
+Pitch.Black.DiVX-DVDRIP-German-GWL 
+Pitch_Black_DiVX-DVDRIP-German-GWL 
+
+Beispiele, Quelle = digital-TV: 
+
+Pitch.Black.DiVX.dTV.German-GWL 
+Pitch.Black.DiVX-dTV-German-GWL 
+Pitch_Black_DiVX-dTV-German-GWL 
+
+
+.NFO___________________________________________________________________________ 
+
+In der NFO muessen mindestens folgende Informationen enthalten sein: 
+
+Releasedatum 
+Anzahl der RARs pro CD 
+Videoaufloesung 
+Audioaufloesung 
+deutscher Titel und Originaltitel 
+deutscher Kinostart und DVD-Release-Datum 
+Name des Regisseurs 
+Laenge des Films 
+IMDB-Rating und URL zum Film 
+5-zeilige Angabe des Plots 
+
+
+.SiGNiERUNG____________________________________________________________________ 
+
+Diese Regeln sind von folgenden Gruppen anerkannt: 
+
+
+ADM ANNO DiA GDS GME2000 GWL MMP RC 
+
+[ODDR-20010820b.txt]______________________________________________________[EOF] 
+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

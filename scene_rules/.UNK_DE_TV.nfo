@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>UNK_DE_TV.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">Also diese Rules sollen keine Eigenst&#931;ndigen sein, vielmehr sind Sie als eine Erg&#931;nzung der ODDR anzusehen.
+Einige Rules m&#247;gen etwas hart klingen am Anfang, Sie machen bei n&#931;herer Betrachtung aber durchaus Sinn, jeder
+von uns der Serien macht wei&#9600; bestimmt was in der englischen Serien Szene abgeht. Da wird mit Absicht mit
+Settings gerippt die inkompatibel zu nem Release der selben Serie einer anderen Group sind. Da werden dann
+von einer Group 2 Folgen auf f&#8319;r eine CD gerippt und eine andere Group die bei einer Folge schneller war macht es
+f&#8319;r 3 Folgen pro CD oder encoded gar auf 400mb damit das ja nicht passt 
+
+1.) Als Source zul&#931;ssig sind nur DVDs und dTV Streams. Bei dTV sollte nach M&#247;glichkeit eine Nachtwiederholung als
+Quelle genommen werden, Warum? Ganz einfach: Auf Premiere werden Folgen nachts gr&#247;&#9600;tenteils mit einer h&#247;heren
+Aufl&#247;sung und/oder h&#247;heren Bitrates ausgestrahlt. Wer die Rules weiterliest versteht auch das es machbar ist eine
+Nachtwiederholung zu nehmen. Der Rip darf kein Logo/Watermark enthalten.
+
+2.) Sollte zu einer Serien die im dTV l&#931;uft innerhalb der n&#931;chsten 8 Wochen eine DVD erscheinen ist auf die DVD zu
+warten.
+
+3.) Eine Serie die von einer Group angefangen wurde, sollte bei der Group bleiben, aber mit gewissen Einschr&#931;nkungen:
+
+-> F&#931;ngt eine Group eine Serie an, muss Sie diese auch konsequent zu Ende rippen. Sollte bei einer t&#931;glich
+ausgestrahlten Serie innerhalb von 7 Tagen und einer w&#247;chentlichen ausgestrahlten Serie innerhalb von
+14 Tagen kein Rip der zugeh&#247;rigen Group vorhanden sein, kann die Serie automatisch von einer anderen
+Group weiter gemacht werden, hier greift diese Rule dann auch wieder.
+-> Bei einer Serie auf DVD sollte innerhalb von 7 Tagen eine Episode released werden. Ist die erste Episode
+released hat automatisch die Group den Zuschlag f&#8319;r die ganze Serie  muss aber innerhalb der n&#931;chsten
+7 Tage jeweils eine Folge der DVD Box releasen, ansonsten greift hier Rule 3.1.
+-> Die Nummerierung muss immer von der Group &#8319;bernommen werden, welche die Serie begonnen hat. Es gibt
+viele Episodenguides mit vielen verschiedenen Nummerierungen und alle meinen Sie seien korrekt.
+-> Sollte einer Group ein Stream fehlen, weil defekt oder sonst irgendwelcher Problemchen, bedeutet dies NICHT
+das die Serie an eine andere Group f&#931;llt, erst wenn auch die Folgen danach nicht mehr kommen ist davon
+auszugehen das die Group hier grobe Fehler gemacht hat.
+
+4.) Bei den Episodennummerierungen ist ein Blick auf http://www.epguides.de/ hilfreich. Diese Adresse hat sich als
+korrekt f&#8319;r nahezu jede Serie erwiesen und enth&#931;lt neben einer simplen Episodenbeschreibung n&#8319;tzliche
+Hintergrundinfos zu fast jeder Serie. Die Nummerierung ist NICHT fortlaufend zu w&#931;hlen.
+
+-> Richtig: S01E01
+S01E02
+S02E01
+...
+-> Falsch: S01E01
+S01E02
+S02E03
+...
+
+5.) Die Dirnamen sind den ODDR zu entnehmen es kommt lediglich eine eindeutige Seriennummerierung hinzu.
+
+Serientitel-S01E01-Episodentitel-German-DVDRiP-DivX-MMP
+Serientitel.S01E01.Episodentitel.German.DVDRiP.DivX-MMP
+
+-> Sollte eine Serie nur eine Staffel haben oder keine Staffelnummerierung, so kann die Staffelbezeichnung
+unerw&#931;hnt bleiben.
+
+Serientitel-E01-Episodentitel-German-DVDRiP-DivX-MMP
+Serientitel.E01.Episodentitel.German.DVDRiP.DivX-MMP
+
+-> Um eine einheitliche Nummerierung zu gew&#931;hrleisten, muss eine Staffel-/Episodennummerierung immer zweistellig
+formatiert sein. Auch wenn die Serie weniger als 10 Staffeln/Episoden enth&#931;lt. Dies schlie&#9600;t auch Anime Serien
+ein.
+
+Richtig: S0xE0x
+Falsch: SxEx
+
+6.) Bei 4:3 Serien sollte generell eine Aufl&#247;sung von 512x384 Pixeln gew&#931;hlt werden. Serien die nicht 4:3 sind sollten
+je nach Source entschieden werden, Bei dTV streams sollte eine Aufl&#247;sung von 576xXXX nicht &#8319;berschritten werden.
+Bei DVD sollten 640xXXX nicht &#8319;berschritten werden.
+
+7.) Kommen wir nun zur Dateigr&#247;&#9600;e: Bei 20-25 Minuten Kurzserien sollten 3 Folgen auf eine Gesamtgr&#247;&#9600;e von 700 MB
+encoded werden. Bei einer L&#931;nge von 45 Minuten sollten 2 Folgen auf 700 MB encoded werden.
+
+8.) Dies ist keine richtige Rule nur ein Hinweis: Jede Serien Group sollte hin und wieder mal einen Blick auf
+http://www.wunschliste.de/ werfen. Dort stehen viele zuk&#8319;nftige Serienstarts, man kann f&#8319;r Serien w&#247;chentlich
+voten und es gibt ein Serien Rating System.
+
+Wir hoffe vorallem das mit diesen Rules der Massenpre der Serien aufh&#247;rt, denn im Moment geht das fast nicht anders, sowie
+eine Group eine Serie anf&#931;ngt, st&#8319;rzen sich andere Groups mit drauf, obwohl Sie von alleine niemals darauf gekommen w&#931;ren
+diese Serie zu encoden, es bleibt einen also im Moment nix anderes &#8319;brig als eine Serie fast komplett in einem Ruck zu pren.
+Auch wird mit den Einschr&#931;nkungen zur Rule 3 kein Ausruhrecht f&#8319;r eine Group definiert. F&#8319;r die obigen Rules gibt es genug
+Beispiele wieso so etwas langsam n&#247;tig wird, noch vor einem Jahr h&#931;tten wir keine eigenst&#931;ndigen Serien Rules gebraucht. Ich
+wei&#9600; Rule 3 klingt etwas hart, aber damit wird einmal unn&#247;tiger Traffic vermieden, weil nicht mehr nach Group Internal Rips
+gefragt werden muss (viele Groups verwenden nunmal andere Aufl&#247;sungen und Settings, jedem sein gutes Recht.) und die Spannungen
+werden damit hoffentlich endlich mal beendet. Wer nat&#8319;rlich die 7 Tage verpennt ist selber Schuld, ich denk mit 7 Tagen ist die
+Rule recht annehmbar.
+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

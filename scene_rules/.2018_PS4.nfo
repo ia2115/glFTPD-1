@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2018_PS4.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">&#9484;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9488;
+&#9474;                                                                             &#9474;
+&#9474;                       PS4 Release Standards v1.0 2018                       &#9474;
+&#9474;                                                                             &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;                                                                             &#9474;
+&#9474; 1.1) Releases must be packed in RAR. SFV and NFO must be included.          &#9474;
+&#9474; 1.2) Rars must be in multiples of 50 000 000 bytes but no larger than       &#9474;
+&#9474;      500 000 000 bytes.                                                     &#9474;
+&#9474; 1.3) Only PKG Format releases are acceptable.                               &#9474;
+&#9474;    1.3.1) PKG trumps ISO releases.                                          &#9474;
+&#9474;    1.3.2) PKG must be compressed with RAR4 using m1 compression.            &#9474;
+&#9474;    1.3.3) All groups are encouraged to patch the PKG to the highest         &#9474;
+&#9474;           compatible patchlevel. This is not mandatory.                     &#9474;
+&#9474; 1.4) All releases can include a proof picture with disc and a group tag     &#9474;
+&#9474;    1.4.1) Proof picture can be scanned and must be in JPEG format.          &#9474;
+&#9474;    1.4.2) Proof picture must not be blurry. Disc/Cart Code must be clearly  &#9474;
+&#9474;           visible.                                                          &#9474;
+&#9474;    1.4.3) If a release is suspicious, a proof can be requested and has to   &#9474;
+&#9474;           be done within 24hrs.                                             &#9474;
+&#9474; 1.5) PSN releases must also be in PKG format.                               &#9474;
+&#9474; 1.6) If a game is re-released for having additional foreign languages, the  &#9474;
+&#9474;      release must be tagged as MULTI and the nfo must specify which         &#9474;
+&#9474;      additional languages are included.                                     &#9474;
+&#9474; 1.7) All previous ISO File Format releases can be re-released as PKG.       &#9474;
+&#9474; 1.8) The dirname should only contain the game name and tags.                &#9474;
+&#9474;    1.8.1) The source region should be included in the nfo.                  &#9474;
+&#9474;    1.8.2) The required firmware must be included in the nfo.                &#9474;
+&#9474;    1.8.3) Patchlevel / Installed updates should be included in the nfo.     &#9474;
+&#9474;                                                                             &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;                                                                             &#9474;
+&#9474;                                   Signed                                    &#9474;
+&#9474;                                                                             &#9474;
+&#9474;    BlaZe, DUPLEX, GCMR, KOTF, LaKiTu, LiGHTFORCE,  PACT, PROTOCOL, TRSI     &#9474;
+&#9474;                                                                             &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;                                                                             &#9474;
+&#9474;  Compliance with this document is mandatory as of 2018-02-22 00:00:01 UTC   &#9474;
+&#9474;                                                                             &#9474;
+&#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9496;</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

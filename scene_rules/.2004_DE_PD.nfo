@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2004_DE_PD.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">2004-12-14 DPDR
+Deutsche Pirate-Dub-Regeln
+
+01. Ein PD ist nur dann valid, wenn er innerhalb von 4 Wochen nach 
+    .DE-Kinostart kommt.
+02. Ein SVCD-PD ist Dupe, sofern ein VCD-PD existiert und vice versa.
+03. Das Quellmaterial darf nur mit expliziter Erlaubnis der Gruppe verwendet
+    werden. Die Gruppe muss in der NFO angegeben werden.
+
+    NOTE: Every Group is allowed to forbid the pirate-dubbing of their 
+          releases. Our nukers will respect that and strictly nuke all of 
+          those releases.
+
+04. Die Bildquelle muss vollstaendig sein.
+05. Die Tonspur darf nicht per Mikrophon abgegriffen worden sein.
+06. PDs von CAMs sind nicht zulaessig.
+07. Sofern die deutsche Kinoversion eines Filmes laenger als das Quellvideo 
+    ist, ist ein PD nicht zulaessig.
+08. Sofern ein PD valid war, duerfen keine Proper-PDs kommen, die sich 
+    primaer durch qualitativ hoeherwertige Quellen rechtfertigen.
+09. Ansonsten gelten die ueblichen technischen Standards fuer VCD und SVCD -
+    Standalone-Player gelten dabei als Referenz fuer Mangelfreiheit.
+10. Benennung:
+
+    &#60;Deutscher*Titel>*&#60;QUELLE>*PD*German*&#60;FORMAT>-&#60;GRUPPE>
+
+    *  = . oder _
+    PD = Pirate Dub
+
+    Der.Stadtneurotiker.TS.PD.German.SVCD-GRP
+    Der_Stadtneurotiker_SCREENER-PD-GERMAN.VCD-GRP
+    ...
+
+[DPDR-20020804a]
+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

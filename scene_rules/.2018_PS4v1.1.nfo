@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2018_PS4v1.1.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">      ______      _______ ______    _______    _____      _____    _______     
+    _/   _  )__ _/  _   /_\     \ _/  _   /_ _/     \_   /   _/_ _/  _   /__   
+    \   _/     \\  -\___\ \\     \\  -\___\ \\   _\   \--\___   \\  -\___\  \  
+   /    \       .  _/      .      .  _/      .   \     .   :/    .  _/      _\ 
+ ./_____:\_____/____________\      \________/____:\_____\_______/___________\  
+                            /______/                                           
+                        _______                                                
+   _______   _____ _____\      \   __________    _____                         
+  /   __  )__\    \\    \\      \ /    _    /   /   _/____ PS4 Scene Rules 2018
+ /   /_      \     \     \       \\   -\____\---\___      \   [28 June 2018]   
+/      \      .     \     .       .   _/      .   :/       \                   
+\______:\______\___________\       \___________\___________/. ----------------+
+.                          /_______/                       .                  &#9474;
+&#9474;                                                                             &#9474;
+&#9474;                       PS4 Release Standards v1.1 2018                       &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;                                                                             &#9474;
+&#9474; 1) Packing:                                                                 &#9474;
+&#9474;    1.1) Releases must be packed in RAR. SFV and NFO must be included.       &#9474;
+&#9474;    1.2) Rars must be in multiples of 50.000.000 bytes but no larger than    &#9474;
+&#9474;         500.000.000 bytes.                                                  &#9474;
+&#9474;    1.3) Rars must be RAR4 compressed with M1 (fastest) or better.           &#9474;
+&#9474;    1.4) Rars must use &#34;Old Style volume names&#34;.                             &#9474;
+&#9474;    1.5) Password protected archives are not allowed.                        &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 2) NFO:                                                                     &#9474;
+&#9474;    2.1) The release must include a .NFO. The file must be a plain-text      &#9474;
+&#9474;         document and at least include the name of the title.                &#9474;
+&#9474;    2.2) NFO must include GAMEID and version.                                &#9474;
+&#9474;    2.3) The required firmware must be included in the nfo.                  &#9474;
+&#9474;    2.4) Patchlevel/Installed updates must be included in the nfo.           &#9474;
+&#9474;    2.5) All game languages is encouraged to be included in nfo.             &#9474;
+&#9474;    2.6) A short description of release is encouraged to be in the nfo.      &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 3) Image format:                                                            &#9474;
+&#9474;    3.1) Only PKG Format releases are acceptable.                            &#9474;
+&#9474;    3.2) PKG trumps ISO releases.                                            &#9474;
+&#9474;    3.3) The game dump needs to be a full working &#34;dump&#34;.                    &#9474;
+&#9474;    3.4) All groups are encouraged to patch the PKG to the highest           &#9474;
+&#9474;         compatible patchlevel. This is not mandatory.                       &#9474;
+&#9474;    3.5) Source of game disc origin must be included in nfo.                 &#9474;
+&#9474;    3.6) All previous ISO File Format releases can be re-released as PKG.    &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 4) Proof:                                                                   &#9474;
+&#9474;    4.1) The groups are encouraged to include a proof picture with disc      &#9474;
+&#9474;         and a group tag, for &#34;new&#34; groups which pred less then 50 &#34;working&#34; &#9474;
+&#9474;         releases this is mandatory.                                         &#9474;
+&#9474;    4.2) You have 24 hours AFTER NUKE to release a Prooffix.                 &#9474;
+&#9474;         After this 24 hours grace period, any other group is allowed to     &#9474;
+&#9474;         release a PROPER with scans/photos.                                 &#9474;
+&#9474;    4.3) Proof picture can be scanned and must be in JPEG format.            &#9474;
+&#9474;    4.4) Proof picture must not be blurry. Disc/Cart Code must be clearly    &#9474;
+&#9474;         visible.                                                            &#9474;
+&#9474;    4.5) If the medium or cover/booklet contain anything that may expose     &#9474;
+&#9474;         your identity, then that part of the image can be blurred or        &#9474;
+&#9474;         blackened. Additional scans may be added but these DO NOT count     &#9474;
+&#9474;         as sufficient proof!                                                &#9474;
+&#9474;    4.6) PSN releases will be exempt from proof requirements as they are     &#9474;
+&#9474;         downloadable.                                                       &#9474;
+&#9474;                                                                             &#9474;
+&#9474;   NOTE: We STRONGLY recommend the removal of all Exif data! Uniquely        &#9474;
+&#9474;         identifying information such as the camera serial number and GPS    &#9474;
+&#9474;         coordinates can pose a security threat if not removed.              &#9474;
+&#9474;         Use tools such as jhead, PureJPG, EXIF Cleaner...                   &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 5) Updates Patches DLC:                                                     &#9474;
+&#9474;    5.1) Updates/DLC for releases must also be in PKG format.                &#9474;
+&#9474;    5.2) Update/patch/DLC must say in nfo what release it is intended for.   &#9474;
+&#9474;    5.3) If Update/patch/DLC is for an iNTERNAL release,                     &#9474;
+&#9474;         Update/patch/DLC must be tagged iNTERNAL too.                       &#9474;
+&#9474;    5.4) Suggested directory format (if the Update/patch/DLC is pred alone): &#9474;
+&#9474;         GAME.NAME.&#60;PROPER/READ.NFO/REPACK>.UPDATE.v1.00.PS4-GRPNAME         &#9474;
+&#9474;         Game_Name_&#60;PROPER/READ_NFO/REPACK>_v1.00_PATCH_PS4-GRPNAME          &#9474;
+&#9474;         Game.Name.&#60;PROPER/READ.NFO/REPACK>.DLC.PS4-GRPNAME                  &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 6) Region and Languages:                                                    &#9474;
+&#9474;    6.1) If a game does not include the English language, this must be       &#9474;
+&#9474;         specified in the dir name (with use of language tag).               &#9474;
+&#9474;         - If the game has only one foreign language an appropriate tag      &#9474;
+&#9474;           should be used in the directory for example JPN/KOR/etc.          &#9474;
+&#9474;         - If the game includes multiple languages MULTI tag should be       &#9474;
+&#9474;           used, and the nfo must specify which languages are included.      &#9474;
+&#9474;    6.2) If a game is re-released for having additional foreign languages,   &#9474;
+&#9474;         the release must be tagged as MULTI and the nfo must specify        &#9474;
+&#9474;         which additional languages are included.                            &#9474;
+&#9474;    6.3) Due to releases being region free, region tag EURO, USA and ASIA    &#9474;
+&#9474;         is NOT ALLOWED.                                                     &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 7) Other:                                                                   &#9474;
+&#9474;    7.1) The dirname must only contain the game name, allowed tags,          &#9474;
+&#9474;         platform name and groupname.                                        &#9474;
+&#9474;    7.2) the &#39;online only&#39; games must state in nfo that game is for online   &#9474;
+&#9474;         only, as those cant be played with the currently known methods.     &#9474;
+&#9474;    7.3) Homebrew software, emulators will not be released unless its        &#9474;
+&#9474;         official retail or from PSN.                                        &#9474;
+&#9474;    7.4) Virtual Reality releases must be tagged &#39;VR&#39;.                       &#9474;
+&#9474;    7.5) If the release is an unlocker or trainer compatible with more than  &#9474;
+&#9474;         one version/update of a game, the highest compatible version number &#9474;
+&#9474;         must be included in the dirname.                                    &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 8) Only these characters are allowed in dirname and filenames:              &#9474;
+&#9474;    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.-_        &#9474;
+&#9474;                                                                             &#9474;
+&#9474; 9) Suggested directory formats:                                             &#9474;
+&#9474;    GAME.NAME.&#60;PROPER/READ.NFO/REPACK>.PS4-GRPNAME                           &#9474;
+&#9474;    Game_Name_LANGUAGE_&#60;PROPER/READ_NFO/REPACK>_PS4-GRPNAME                  &#9474;
+&#9474;    Game.Name.MULTI.&#60;PROPER/READ.NFO/REPACK>.PS4-GRPNAME                     &#9474;
+&#9474;                                                                             &#9474;
+&#9474;    Game.Name.&#60;PROPER/READ.NFO/REPACK>.VR.PS4-GRPNAME                        &#9474;
+&#9474;    Game.Name.LANGUAGE.&#60;PROPER/READ.NFO/REPACK>.VR.PS4-GRPNAME               &#9474;
+&#9474;    GAME.NAME_MULTI_&#60;PROPER/READ_NFO/REPACK>_VR_PS4-GRPNAME                  &#9474;
+&#9474;                                                                             &#9474;
+&#9474;    NOTE: To nukers/nukenets if something is unclear, ask your resident      &#9474;
+&#9474;          groupadmin that signed rules for interpretation and implementing   &#9474;
+&#9474;          of above rules.                                                    &#9474;
+&#9474;                                                                             &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;                                   Signed:                                   &#9474;
+&#9474;                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      &#9474;
+&#9474;       &#729; DarKmooN &#729; DUPLEX &#729; Googlecus &#729; LaKiTu &#729; LiGHTFORCE &#729; PACT &#729;        &#9474;
+&#9474;       &#729; Playable &#729; PROTOCOL &#729; RESPAWN &#729; TRSI &#729; UNLiMiTED &#729; WaLMaRT &#729;        &#9474;
+&#9474;                                                                             &#9474;
+&#9474;                               Refused to Sign:                              &#9474;
+&#9474;                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      &#9474;
+&#9474;                                  &#729; GCMR &#729;                                   &#9474;
+&#9500;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9508;
+&#9474;  Compliance with this document is mandatory as of 2018-07-02 00:00:01 UTC   &#9474;
+&#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9496;
+
+        &#34;make good releases. break all rules - we are pirates afterall&#34;        </pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>sizes.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">XVID:
+685MB &#60; xvid size &#60; 702MB
+702265KB &#60; xvid size &#60; 719694KB (windows explorer viewed size)
+719119885 bytes &#60; xvid size &#60; 736966656 bytes
+max = 736,966,656 bytes (719694 KB )(702 MB)
+minimum = 713,031,680 bytes (696320 KB )(680 MB)
+
+txd2k5 states:
+
+- Release runtime must be at least 50 minutes for using the full burnable 
+  media capacity. In such cases, releases MUST utilize a MINIMUM of       
+  680mb of the 700mb standard burnable media (Multi-CD releases MUST      
+  conform to the 680mb minimum, for each CD used). Any other use of the   
+  media shall not be over 350mb (Sizes between 350mb to 680mb are not     
+  allowed).                                                               
+
+
+txd2k9 states:
+
+- MAXIMUM CD media capacity value is 736966656 bytes = 719694 KB = 702 MB
+- MINIMUM CD media capacity value is 723517440 bytes = 706560 KB = 690 MB
+
+http://rules.nukenet.info/t.html?id=2005_XViD.nfo
+http://rules.nukenet.info/t.html?id=2009_XViD.nfo
+http://en.wikipedia.org/wiki/CD-ROM#Capacity
+_______________________________________________________________________________
+
+DVDR:
+4,718,592,000 Bytes
+4,608,000 KB
+4,500 MB
+4.395 GB
+
+wikipedia claims:
+DVD-R = 4,707,319,808 Bytes
+DVD+R = 4,700,372,992 Bytes
+DVD-R DL = 8,543,666,176 Bytes
+DVD+R DL = 8,547,991,552 Bytes
+
+^^^ old. new( tdrx2k9 ):
+
+4,700,372,992 bytes
+-> http://rules.nukenet.info/n.html?id=2009_DVDR.nfo
+
+http://rules.nukenet.info/t.html?id=2005_DVDR.nfo
+http://en.wikipedia.org/wiki/DVDR#Recordable_DVD_capacity_comparison
+_______________________________________________________________________________
+
+BDr:
+
+TBDR2K9 States:
+
+between 22888 MB and 23866 MB unless source is BDR25
+
+Single Layer: 23841.86MB
+Dual Layer  : ?
+
+Wikipedia claims:
+25 GB (23.28 GiB)
+50 GB (46.57 GiB)
+
+http://rules.nukenet.info/t.html?id=2009_BDr.nfo
+http://en.wikipedia.org/wiki/Bluray
+http://www.avsforum.com/avs-vb/showthread.php?p=16169482
+http://en.wikipedia.org/wiki/GiB
+_______________________________________________________________________________
+
+X264:
+
+ 5.1)  Final mkv file size in MiB (1048576 bytes) must be:
+           Multiples of 2240
+           DVD5/x (1493, 1120, etc.)
+           8140, 2713
+           In addition, 3360 and 4070 are allowed for 1080p tv.
+ 5.2)  A max undersize of 40 MiB can be tolerated.
+
+minimum acceptable filesizes:
+367    ( 407   - 40 )
+408    ( 448   - 40 )
+457    ( 497   - 40 )
+520    ( 560   - 40 )
+300    ( 640   - 40 )
+706    ( 746   - 40 )
+856    ( 896   - 40 )
+1080   ( 1120  - 40 )
+1453   ( 1493  - 40 )
+2200   ( 2240  - 40 )
+2673   ( 2713  - 40 )
+4440   ( 4480  - 40 )
+6680   ( 6720  - 40 )
+8100   ( 8140  - 40 )
+8920   ( 8960  - 40 )
+11160  ( 11200 - 40 )
+13400  ( 13440 - 40 )
+15640  ( 15680 - 40 )
+17880  ( 17920 - 40 )
+20120  ( 20160 - 40 )
+etc etc. 
+
+http://rules.nukenet.info/t.html?id=2008_X264-2.nfo
+http://rules.nukenet.info/x3Zw326.png
+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

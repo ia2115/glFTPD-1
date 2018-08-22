@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2010_DE_SCRIPTS.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">+-----------------------------------------------------------------------------------------------------+
+&#170;                      OFFiCiAL.NULLED.SCRiPT.RULES.2010-DRAFT2                                       &#170;
+&#170;                                                                                                     &#170;
++-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+&#170;     Requirements: Notepad with terminal font or any other ascii viewer.                             &#170;
++-----------------------------------------------------------------------------------------------------&#170;
+&#170; Date: 04.05.2010 - 20:00 GMT+1                                                                      &#170;
++-----------------------------------------------------------------------------------------------------+
+&#170;    An Alle 0Day Groups die es Interessiert: Diese Rules sind derzeit nur ein Vorschlag,
+&#170;    wer fixes einarbeiten moechte, etwas aendern moechte oder generell Sie nur Signen moechte
+&#170;    kann uns gerne unter unserer Email Adresse (Steht unten) erreichen.
+&#170;
+&#170;    Sollte sich keiner bis 10.05.2010 melden werden wir diese Rules 1:1 uebernehmen.
+&#170;
+&#170;    PS: Hilfe beim uebersetzen in andere Sprachen (FR/ES zB.) ist immer gerne gesehen.
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;-GERMAN-
+&#170;
+&#170;iNDEX:
+&#170;    0: Generelle Rules
+&#170;    1: Packaging / NFO
+&#170;     1.1: Beispiel
+&#170;     1.2: NFO
+&#170;    2: Naming
+&#170;     2.1: Themes/Addons
+&#170;     2.2: Updates
+&#170;    3: NULLiNG Rules
+&#170;     3.1: KEYGEN Rules
+&#170;    4: NUKE RULES / REASONS
+&#170;
+&#170;    Vorwort:
+&#170;   Da die letzte PHP bzw. Script Release Group schon lange tot ist und es keinerlei feste Rules
+&#170;   in diesem Bereich gibt, haben wir uns entschlossen neue Rules zu verfassen, damit bei
+&#170;   zukuenftigen Releases keine Verwirrung entsteht und auch andere 0Day Groups beginnen koennen
+&#170;   Scrips zu releasen ohne Chaos zu verursachen.
+&#170;
+&#170;   Generell gilt: Die aktuellen 0Day Rules gelten fuer alle nicht behandelten Themen!
+&#170;
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;     0. Generelle Rules
+&#170;         -NULLED duped KEYGEN -NICHT- (und vice versa), beides hat unterschiedliche Vorteile.
+&#170;           dadurch sind pro Script 2 Releases erlaubt (exklusive PROPER/REPACK etc.)
+&#170;         -BETA/ALPHA muss nicht als iNTERNAL Released werden.
+&#170;         -CRACK.ONLY / KEYGEN.ONLY / KEYFiLEMAKER.ONLY sind nur erlaubt sofern die Software 
+&#170;           (zB. als Vollwertige, Unlockbare Demoversion)
+&#170;           Kostenlos und ohne Anmeldung direkt beim Hersteller Downloadbar ist.
+&#170;           Das sollte aber vermieden werden da KEYGEN/KEYFiLE NULLED nicht duped.
+&#170;         -On-the-Fly Patches sind erlaubt wenn sie benoetigt werden (zB. wenn eine SystemID 
+&#170;           zwangsweise fuer die Funktion der Software benoetigt wird) 
+&#170;           allerdings ist pre-patched (zB. NULLED auf Jede SystemID) dem vorzuziehen.
+&#170;
+&#170;           Dies ist nach folgendem Format zu Taggen:
+&#170;           &#60;incl.KEYFiLEMAKER.and.PATCH|incl.KEYGEN.and.PATCH>
+&#170;           
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;     1. Packaging
+&#170;         -Standard 0Day Packing, Filenames maximal 8.3 Zeichen (Name.typ - 12345678.123)
+&#170;          Releases muessen in RAR Gepackt sein - Kompression ist erlaubt aber nicht Pflicht.
+&#170;          Jede ZIP sollte 5000000 Bytes (5Mb) umfassen. Demzufolge
+&#170;          ist die size pro Splittet RAR in etwa das gleiche.
+&#170;          Groessere Filesizes sind Erlaubt, siehe 0Day Rules.
+&#170;
+&#170;
+&#170;       1.1: Beispiel
+&#170;             12 Files - 26Mb
+&#170;             -5x 5Mb RAR + 1x 1Mb RAR -> grprls.rXX
+&#170;             (Anm.: die RARs koennen auch nur &#60;grpname>.rXX benannt sein)
+&#170;             --Jede RAR in eigene ZIP
+&#170;             --5x 5Mb ZIP + 1x 1Mb ZIP -> grprls&#60;a|b|c|etc>.zip
+&#170;             (Anm.: das jeweilige Naming der ZIPs 
+&#170;             (a|b oder 001|002, 01|02, 1|2) ist der Group ueberlassen.)
+&#170;   
+&#170;             Jede ZIP muss enthalten:
+&#170;              xxxx.rXX - file_id.diz - &#60;group>.nfo
+&#170;
+&#170;             Falsches Naming der RARs/ZIPs ist kein Nuke Grund, sofern nicht ein anderer Grund
+&#170;              auch in frage kommt (dupe.filenames, special.chars u.a.)
+&#170;
+&#170;
+&#170;        1.2: NFO
+&#170;              In der NFO MUSS enthalten sein:
+&#170;              -Release Date
+&#170;              -Groesse (Alternativ: Diskcount)
+&#170;              -Developer Webseite
+&#170;              -Version
+&#170;              -Kurze Beschreibung (Copy &#38; paste) des Apps
+&#170;              -Sprachen bei MULTi
+&#170;              -Kurze Verwendungsbeschreibung 
+&#170;
+&#170;              In der NFO erwuenscht ist:
+&#170;              -Preis (Waehrung irrelevant - nach Webseite richten)
+&#170;
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;     2: Naming
+&#170;         Naming nach folgendem Schema:
+&#170;          &#60;> = noetig | [] = zusatz
+&#170;         Sprache muss nur bei nicht Englisch-Only Releases angegeben werden
+&#170;         Fuer den seltenen Fall das ein Release nur 2 Sprachen enthaelt 
+&#170;         ist statt MULTi BiLINGUAL als Tag zu waehlen.
+&#170;
+&#170;       &#60;Name>.[Ausfuehrung].v&#60;ersion>.[Sprache|MULTi|BiLiNGUAL].
+&#170;       &#60;NULLED|incl.KEYGEN|incl.KEYFiLEMAKER|KEYFiLEMAKER.ONLY|KEYGEN.ONLY|CRACK.ONLY>.
+&#170;       [Beta|Alpha|RETAIL|REAL].[iNTERNAL|iNT|DiRFiX|NFOFiX|PROPER|REPACK|READ.NFO].
+&#170;       &#60;PHP|ASP|etc>-GRP
+&#170;
+&#170;   Beispiele (fiktiv):
+&#170;
+&#170;   Vbulletin.v5.1.NULLED.PHP-GRP = Vbulletin 5.1 Englisch, Nulled
+&#170;   Vbulletin.v5.1.KEYGEN.ONLY.PHP-GRP = Vbulletin 5.1 Englisch, Keygen Only
+&#170;   Vbulletin.v5.1b3.NULLED.BETA.iNTERNAL.PHP-GRP = Vbulletin 5.1 Beta, Englisch, iNTERNAL, Nulled
+&#170;   Vbulletin.PRO.v5.1.NULLED.PHP-GRP = Vbulletin 5.1, Pro Edition, Englisch, Nulled
+&#170;   Vbulletin.v5.1.MULTi.incl.KEYGEN.PHP-GRP = Vbulletin 5.1, Multilanguage (Notes in NFO!), Keygen
+&#170;   Gallerypro.v2.1.GERMAN.NULLED.ASP-GRP = Gallerypro 2.1, Deutsch, Nulled, ASP 
+&#170;
+&#170;
+&#170;   Sofern das Script komplett Ungeschuetzt und un-encodiert verkauft wird (keine Callbacks o.ae.)
+&#170;   wird statt NULLED/KEYGEN einfach kein Tag benutzt:
+&#170;    Somesoftware.v1.5.PHP-GRP
+&#170;
+&#170;   In diesem Kontext gilt schon das descramblen/decodieren von Ioncube (oder aehnlich) 
+&#170;   encodiertem Code als NULLED, damit sollte ein Tagging mit .NULLED. benutzt werden.
+&#170;   (Hintergrund fuer das taggen mit NULLED ist vorallem Dupe abfrage und historischer Hintergrund)
+&#170;   Releases mit Key in NFO und nulled backend (keine Callbacks/Security Checks) 
+&#170;   sind ebenfalls als NULLED zu labeln.
+&#170;
+&#170;
+&#170;            2.1: Themes/Addons
+&#170;                  Themes/Addons fuer Wordpress/Joomla/Vbulletin etc.
+&#170;                 
+&#170;                 &#60;Name>.&#60;version>.for.&#60;fuer>.&#60;version>.[Sprache|MULTi].
+&#170;                 &#60;NULLED|incl.KEYGEN>.[Beta|Alpha|RETAIL].
+&#170;                 [iNTERNAL|DiRFiX|NFOFiX|PROPER].&#60;PHP|ASP|etc>-GRP
+&#170;
+&#170;                 Beispiele (fiktiv):
+&#170;                 Dark.Theme.v3.for.vBulletin.5.X.GERMAN.NULLED.PHP-GRP 
+&#170;                 = Dark Theme Version 3, fuer Vbulletin Version 5.X, Deutsch, Nulled
+&#170;                 Sidebar.Rotation.2.for.Wordpress.2.1.incl.KEYGEN.PHP-GRP 
+&#170;                 = Sidebar rotation 2 Addon fuer Wordpress 2.1, mit Keygen
+&#170;
+&#170;            2.2.: Updates
+&#170;                   Updates sind 4 Wochen nach dem Letzten Pre erlaubt 
+&#170;                   (gleiche MU Regelung wie bei 0Day)
+&#170;                   
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;
+&#170;       3: NULLiNG Rules
+&#170;           -Jegliche Callbacks muessen entfernt bzw. gepatcht werden 
+             (zB. Serial Check ueber den Hersteller Server)
+&#170;           -Keine Group Watermarks (auch nicht in Script Kommentaren).
+&#170;           -Bei encodeten Releases muessen alle Dateien voellig decodiert sein 
+&#170;             (zb. Ioncube, Sourceguardian, eval() etc.)
+&#170;
+&#170;            3.1: KEYGEN Rules
+&#170;                  -Keygens muessen im selben Format wie das Release vorliegen 
+&#170;                    (zB. Release ist PHP - Keygen auch in PHP)
+&#170;                  -Die Bedienungssprache muss bei MULTi entweder auswaehlbar (zB. DE,EN,PL) sein 
+&#170;                    oder der Keygen muss komplett in Englischer Sprache sein.
+&#170;                    Bei Spezifischen Releases (zB. GERMAN) kann der Keygen in der Sprache des 
+&#170;                    Releases (zB. Deutsch) oder voellig in Englisch sein.
+&#170;                  -Group Kommentare in Keygen Quelltexten sind ausdruecklich erwuenscht sofern 
+&#170;                    die Group den Code verstaendlich erklaeren will, sind allerdings 
+&#170;                    keinesfalls verpflichtend.
+&#170;                  -Encodeter Keygen Code sind erlaubt, solange keine externen Loader (zb. Ioncube) 
+&#170;                   verwendet werden. (Schutz vor Stealing)
+&#170;                  -ASCii Art / Bilder sind erlaubt, sollten aber sparsam benutzt werden um Browser
+&#170;                    und Webserver zu schonen.
+&#170;                  -Bilder eingebunden in Keygens duerfen die Funktion in keiner weise beeinflussen
+&#170;                    (zB. Bild fehlt = Keygen laedt nicht = Nuke/Proper Grund)
+&#170;                  -Bilder muessen beiliegen und duerfen nicht von externen Webseiten
+&#170;                    eingebunden werden (Sicherheitsgruende)
+&#170;                   (Bevorzugt ist die Einbindung als zB. BASE64 direkt im Quelltext zu 
+&#170;                   nutzen, und ohne Externe Files)
+&#170;
++-----------------------------------------------------------------------------------------------------+
+&#170;
+&#170;  4: NUKE und PROPER RULES / REASONS
+&#170;    NUKEs sind moeglich fuer:
+&#170;    -bad.pack (zB. RARs als parent statt ZIP) - stolen.from.[web|p2p|etc] - missing.files 
+&#170;    -bad.crack (= bad nulled) - keygen.not.working
+&#170;    -Common Sense Nukes (dupe.filename, mislabeled.&#60;|>, etc.)
+&#170;    -Das ist keine Abschliessende Liste.
+&#170;
+&#170;   PROPER/DiRFiX/REPACK folgt den normalen, scene ueblichen Rules.
+&#170;    
+&#170;    
++-----------------------------------------------------------------------------------------------------+
+&#170;                                   SiGNED:                                                           &#170;
+&#170;                               YET TO BE SIGNED                                                      &#170;
+&#170;                 CONTACT: contactye@hush.com
++-----------------------------------------------------------------------------------------------------+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2009_HUN_X264d.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">                   _______                _______ _____       
+                  |   |   |.--.--.-----. |   |   |     \          
+                  |       ||  |  |     | |       |  --  |         
+                  |___|___||_____|__|__| |___|___|_____/          
+           ______         __                     __               
+          |   __ \.-----.|  |.-----.---.-.-----.|__|.-----.-----. 
+          |      &#60;|  -__||  ||  -__|  _  |__ --||  ||     |  _  | 
+          |___|__||_____||__||_____|___._|_____||__||__|__|___  | 
+                                                          |_____| 
+          _______ __                  __                __        
+         |     __|  |_.---.-.-----.--|  |.---.-.----.--|  |.-----.
+         |__     |   _|  _  |     |  _  ||  _  |   _|  _  ||__ --|
+         |_______|____|___._|__|__|_____||___._|__| |_____||_____|
+
+&#9556;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9559;
+&#9553; HD movies kategoriara vonatkozo szabalyok ervenyesek 2009.04.15.-tol          &#9553; 
+&#9553;  Kategoriak                                                                   &#9553; 
+&#9553;  lejatszasi formatum szerint                                                  &#9553; 
+&#9553;  -1.mkv                                                                       &#9553; 
+&#9553;  -2.bd strukturak                                                             &#9553; 
+&#9553;                                                                               &#9553;  
+&#9553;  1.1.MKV videok:                                                              &#9553; 
+&#9553;  -   720p min. 4000Kb/s kivetel anime                                         &#9553;             
+&#9553;  -   1080p min. 8000 kbps kivetel anime,                                      &#9553;               
+&#9553; -   Minden filmnel kotelezo megtartani sajat fps erteket                      &#9553;              
+&#9553; -   Level 4.1-be kell konvertalni (--level 4.1)                               &#9553;                       
+&#9553; -   Kotelezo a b fremek hasznalata kotelezo                                   &#9553;     
+&#9553; -   Minimum 2 pass-t kell hasznalni                                           &#9553; 
+&#9553; -   Maximum bitrata 38 Mbit lehet (--vbv-maxrate 38000)                       &#9553; 
+&#9553; -   VfW (Video for Windows) tiltott                                           &#9553; 
+&#9553; -   --me=> umh--subme=>7 (masodik passnal min. ertek)--bime --partitions p8x8,&#9553; 
+&#9553;  b8x8,i4x4,i8x8 --8x8dc hasznalata kotelezo a masodik menetben                &#9553; 
+&#9553;                                                                               &#9553;
+&#9553; -   Referencia frame -k a kovetkezo tablazat alapjan allitando be :           &#9553;      
+&#9553;      1920x1088: 4 (--ref 4)                                                   &#9553;
+&#9553;      1920x864: 5 (--ref 5)                                                    &#9553;
+&#9553;      1920x720: 6 (--ref 6)                                                    &#9553; 
+&#9553;                                                                               &#9553;
+&#9553;      1280x720: 9 (--ref 9)                                                    &#9553;
+&#9553;      1280x648: 10 (--ref 10)                                                  &#9553;
+&#9553;      1280x588: 11 (--ref 11)                                                  &#9553;
+&#9553;      1280x540: 12 (--ref 12)                                                  &#9553; 
+&#9553;      1280x498: 13 (--ref 13)                                                  &#9553;
+&#9553;      1280x462: 14 (--ref 14)                                                  &#9553; 
+&#9553;      1280x432: 15 (--ref 15)                                                  &#9553;
+&#9553;      1280x405: 16 (--ref 16)                                                  &#9553;
+&#9553;-   Minimum 721 verzioju x264.exe -t kotelezo hasznalni ill. legfrissebbet     &#9553;
+&#9553;-   Ha retail blurayrol van szo arrol kotelezo rippelni a feliratot            &#9553;
+&#9553;                                                                               &#9553;
+&#9553;1.2. mkv audio                                                                 &#9553; 
+&#9553;                                                                               &#9553;                                               
+&#9553;-  Az eredeti 24fps->PAL konverzionak megfelelo nyujtast kell alkalmazni,      &#9553;
+&#9553; ugy, hogy a nyujtott hang hangmagassaga megegyezzen a hd-s eredeti hangeval   &#9553;
+&#9553; (resample vagy time stretch, compare-vel vagy hallas utan eldontheto)         &#9553;
+&#9553;- resample eseten csak jo minosegu (SINC algoritmus) nyujto program            &#9553;
+&#9553; alkalmazhato, pl: soundforge, Audacity, hdaudio-tools (besweet TILOS!)        &#9553;
+&#9553;- time stretch eseten csak MPEX algoritmus alkalmazhato                        &#9553;
+&#9553; pl: prosoniq timefactory, hdaudio-tools, cakewalk sonar (soundforge TILOS!)   &#9553;
+&#9553;- upscale (az forrasnal magasabb bitratara konvertalas) tilos!                 &#9553;
+&#9553;- a megengedett max elcsuszas (desync) az eredeti hangtol max +-20ms           &#9553;
+&#9553;                                                                               &#9553;
+&#9553;- FONTOS: ha potolni kellett az eredeti hangbol, akkor kotelezo a              &#9553;
+&#9553; forced sub ezekhez a reszekhez!                                               &#9553;
+&#9553;                                                                               &#9553;
+&#9553;- ha meret miatt az angol hangsav nem fert bele az mkv-ba, vagy butitani       &#9553;
+&#9553; kellett, akkor kotelezo mellekelni az eredetit!                               &#9553;
+&#9553;- a magyar hangsavot ajanlott kulon is mellekelni, vagy a HDAUDIO              &#9553;        
+&#9553; szekcioba kulon predb addolni, nfo-ban megjelolve a release-t amihez keszult  &#9553;
+&#9553; -Amennyiben van RETAiL hang mar (rls.elkeszitesekor) akkor azt a hangot       &#9553;
+&#9553; k&#247;telez&#247; felhasznalni                                                         &#9553;
+&#9553;                                                                               &#9553;
+&#9553;                                                                               &#9553;
+&#9553;    2.1.bd video strukturajaban (mkv+bd creator)                               &#9553;
+&#9553;     VIDEO:                                                                    &#9553;
+&#9553; Minimum bitrata                                                               &#9553;
+&#9553;-   bd5 ill bd9 BD-CRETOR mappa hasznalata kotelezo rarolva sfv-vel            &#9553;                                      
+&#9553;-   720p=3800 kbps kivetel anime  2800 kbps                                    &#9553;
+&#9553;-   1080p=7000 kbps kivetel anime 4400 kbps                                    &#9553;
+&#9553;-   Minden filmnel kotelezo megtartani sajat fps erteket                       &#9553;        
+&#9553;-   Level 4.1-be kell konvertalni (--level 4.1)                                &#9553;                       
+&#9553;-   Kotelezo a b fremek hasznalata                                             &#9553;
+&#9553;-   Minimum 2 pass-t kell hasznalni (tobb ertelmetlen)                         &#9553;                             
+&#9553;-   Maximum bitrata 38 Mbit lehet (--vbv-maxrate 38000)                        &#9553;               
+&#9553;-   VfW (Video for Windows) tiltott                                            &#9553;                               
+&#9553;-   --me=>hex --subme=>7 (masodik passnal min. ertek) --bime --partitions      &#9553; 
+&#9553; p8x8,b8x8,i4x4,i8x8                                                           &#9553;  
+&#9553;    --8x8dc hasznalata kotelezo a masodik menetben (subme min ertek)           &#9553;
+&#9553;-   Referencia frame -k a kovetkezo tablazat alapjan allitando be :            &#9553;
+&#9553;      1920x1088: 4 (--ref 4)                                                   &#9553;
+&#9553;                                                                               &#9553;
+&#9553;     1280x720: 9 (--ref 9)                                                     &#9553; 
+&#9553;-   Minimum 721 verzioju x264.exe -t kotelezo hasznalni                        &#9553;
+&#9553;-   croppolas utan (ha szukseges) addborder hasznalata                         &#9553;
+&#9553;-  A film felbontasanak vagy 1920*1080 vagy 1280*720 -nak kell lennie K&#9555;TELEZ&#9555;!&#9553;
+&#9553;   2.2. bd audio                                                               &#9553;
+&#9553; hasonlo mkv-nal                                                               &#9553;
+&#9553;                                                                               &#9553;
+&#9553; HDTV re vonatkozo szabalyok:                                                  &#9553;
+&#9553; alapvetoen 2.1 pontban leirta DE:                                             &#9553;
+&#9553;                                                                               &#9553;
+&#9553;- 29.976 fps interlaces filmeknel (video felvetel kivetelevel pl koncertek     &#9553;
+&#9553; es tv-re keszult dokumentumfilmek)  kotelezo az inverse telecine!             &#9553;
+&#9553;- fps modosithato, es a minoseg erdekeben altalaban modositani is kell,        &#9553;
+&#9553; lehetoleg helyre kell allitani az eredeti (altalaban 23.976) fps-t            &#9553;
+&#9553;- nem kotelezo (es nem ajanlott!) a forrason talalhato eredeti (angol)         &#9553;
+&#9553; hangsav megtartasa, ha mas forrasbol (pl. dvd) jobb hang beszerezheto         &#9553;
+&#9553; (pl. 384k ac3 vs. 768 dts) ha letezik                                         &#9553;
+&#9553;- beegetett felirat illetve logo vagy egyeb overlay csak akkor megengedett,    &#9553;
+&#9553; ha nincs jobb elerheto forras                                                 &#9553;
+&#9553;                                                                               &#9553;
+&#9553; NEV dirname                                                                   &#9553;
+&#9553; KOTELEZO                                                                      &#9553;
+&#9553; ENG tag nem kell bele sorrend nem felcserelheto!!DUAL tag azonnal NUKED!!!    &#9553;
+&#9553;                                                                               &#9553;
+&#9553; film orig cime (imdb.cime nem magyar cime).megjelenes eve.forras(bluray hddvd &#9553;
+&#9553; hdtv) bdnel nem kell megjelolni) .                                            &#9553;
+&#9553; BD ha az.HUN-tag.1080p avagy 720p ill 1080i.(DTS).RETAiL ha az /illetve       &#9553;
+&#9553; HDTV nel DUBBED tag/ a hang.codec.majd a vegen grp neve                       &#9553;
+&#9553; pl.Doom.2005.BD9.1080p.DTS.HUN.RETAiL.x264-kancsoka ha bd                     &#9553;
+&#9553;    Doom.2005.Bluray.1080p.DTS.HUN.RETAiL.x264-kancsoka ha mkv                 &#9553;
+&#9553; ill.                                                                          &#9553;
+&#9553; Doom.2005.HDTV.1080i.DTS.HUN.DUBBED.x264-kancsoka  ha HDTV                    &#9553;
+&#9553;                                                                               &#9553;
+&#9553;                                   FIGYELEM!                                   &#9553;
+&#9553; kulfoldi rls-re retail tag NUKED!!                                            &#9553;
+&#9553; Ha egy film sok vagason ment at keretik READ.NFO tag el jelolni               &#9553;
+&#9553;                                                                               &#9553;
+&#9553;                                                                               &#9553;
+&#9553; Meret                                                                         &#9553;
+&#9553;                                                                               &#9553;
+&#9553; mkv meretei                                                                   &#9553;
+&#9553;                                                                               &#9553;
+&#9553;- dvd5  dvd5+1/2dvd5 2dvd5 dvd9 dvd9+dvd5 2xdvd9                               &#9553;
+&#9553;- max. 100 rarbol allhat                                                       &#9553;
+&#9553;- ha a meret nagyobb mint dvd5 vagy dvd9 split hasznalata kotelezo             &#9553;
+&#9553;(a filmel egyutt rarozva)                                                      &#9553;
+&#9553;                                                                               &#9553;
+&#9553; bd meretei                                                                    &#9553;
+&#9553;                                                                               &#9553;
+&#9553;bd5 4gb bd9 7.3gb elfogadott bd5 bd9 bd5+bd9 2xbd5                             &#9553;
+&#9553;                                                                               &#9553;
+&#9553;NFO:                                                                           &#9553;                                                
+&#9553;-   Forras, hang forrasa megjelolese KOTELEZO                                  &#9553;                                       
+&#9553;-   Video audio kbps erteke, nyelvek !!!                                       &#9553;             
+&#9553;-   qp ertekek ( csak ajanlott)                                                &#9553;
+&#9553;-   imdb link                                                                  &#9553;
+&#9553;-   hazai megjelenes (CEE) idopontja (csak ajanlott)                           &#9553;
+&#9553;-------------------------------------------------------------------------------&#9553;
+&#9553;                                                                               &#9553;
+&#9553;                                                                               &#9553;                                                     
+&#9553; HDAudio rules                                                                 &#9553;
+&#9553;- dirname sorrend nem felcserelheto                                            &#9553;                                             
+&#9553; -   Csak igazitott hangok kerulhetnek fel (wavokra bontott majd igazitott)    &#9553;
+&#9553; -   besweet hasznalata tilos                                                  &#9553;                                
+&#9553;                                                                               &#9553;                                           
+&#9553; - csak rarolva 50mb osak                                                      &#9553;                                     
+&#9553; -   Mihez igazitottad ha tudod nfoba legyen benne                             &#9553;                
+&#9553; - mappa dirname--->nev,kiadas datuma(imdb),blu avagy hddvdrol                 &#9553;         
+&#9553;  keszult,dts avagy ac3, szama 448 640 768 1,5 es keszito neve                 &#9553;     
+&#9553; - sfv kotelezo                                                                &#9553;                                      
+&#9553; - nfo kotelezo                                                                &#9553;                                                    
+&#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9565;</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>2003_AUDiOBOOK.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo"> POE Releasing Standards of AUDIOBOOKS
+ 2003-03-22
+
+ THE RULESET:
+
+ Since we have decided to open this new scene, we thought it was time for
+ a standard ruleset. Any other groups that wish to compete in the english
+ audiobook scene can contact us if they have questions, or want the rules
+ altered.
+ 
+ 1 - Audiobooks will be encoded in mp3 at 32kbit/22050Hz/Mono. This
+     approximates to roughly 10mb per hour of audio. Now this might seem
+     a rather low standard. However keep in mind that this is purely
+     spoken word. No bells and whistles -g-
+ 
+     Now it is allowed to split the audio into 80 minute slices so they
+     can be burned on conventional cd burners. Otherwise this format is
+     perfectly capable of operating on a standard standalone mp3 player.
+ 
+ 2 - Release directory names will consist of the following information:
+ 
+       Name of Author 
+       Name of Book
+ 
+     Example:
+ 
+       Some_Author-Some_Book-AUDIOBOOK-POE
+
+     Also prefered is the tag of ABRIDGED or UNABRIDGED; Example:
+
+       Some_Author-Some_Book-AUDIOBOOK-UNABRIDGED-POE
+
+     Other TAGS that are accepted are:
+
+     HEARPLAY
+     AUDIOPOEM
+     AUDIOMAG ( this includes papers / magazines / etc. )
+
+ 3 - Included will be the standard .m3u playlist and standard sfv. 
+
+
+  This concludes the standard Audiobook Ruleset. If any changes are made
+        a revised version will be included with a POE release.
+</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>

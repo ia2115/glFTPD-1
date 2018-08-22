@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>UNK_ES_SVCD.nfo</title>
+    <style type="text/css">
+        @font-face {
+            font-family: nfo;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(/nfo.eot);
+        }
+        .nfo {
+            padding: 12px;
+            font-family: nfo, courier new;
+            font-size: 11px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+    <pre class="nfo">Reglas de Creaci&#8804;n de SVCD
+
+
+Punto 1. Solo se aceptar&#946; el formato de video MPEG2, as&#248; como el formato de audio mp2 
+
+(Layer-2) o bien AC3 (en aquellos casos en que el sonido original sea de gran calidad 
+
+y el ripper as&#248; lo prefiera). 
+
+
+Punto 2. Solo se admitir&#946; la conversi&#8804;n DVD -> SVCD o SAT -> SVCD, quedando prohibidas 
+
+conversiones del tipo DivX -> SVCD, VCD -> SVCD, VHS -> SVCD, etc.
+
+
+Punto 3. El formato de video ser&#946; 480 x 576 que es el 
+
+formato standard de SVCD PAL y 25 FPS, o bien 480 x 480 para el formato SVCD NTSC y 29,97 
+
+FPS.
+
+
+Punto 4. El tama&#177;o m&#946;ximo por cd ser&#946; de 80&#39; (~ 790 mb) quedando prohibido el OverSize. 
+
+El tama&#177;o m&#248;nimo ser&#946; de 74&#39; (~ 730 mb).
+
+
+Punto 5. El encoder o programa de compresi&#8804;n deber&#946; 
+
+permitir multipass, y se deber&#946; hacer un m&#248;nimo de 2 pasadas en VBR (recomend&#946;ndose un m&#248;nimo 
+
+de 4 pasadas para obtener la mayor calidad posible).
+
+
+Punto 6. En caso de que el video original 
+
+sea entrelazado, se utilizar&#946;n filtros para desentrelazarlo, de manera que se corrija tanto 
+
+en entrelazado como el &#34;ghosting&#34;.
+
+
+Punto 7. El audio deber&#946; tener un bitrate m&#248;nimo de 160 kbs 
+
+y m&#946;ximo de 224 kbs en estereo. El audio deber&#946; estar normalizado, y se conservar&#946; el DRC 
+
+(Dynamic Range Control)
+
+
+Punto 8. La frecuencia de audio se permitir&#946; tanto 44.1 KHz como 48 KHz 
+
+(este &#729;ltimo va en beneficio del tiempo de compresi&#8804;n y de la conservaci&#8804;n del sincronismo
+
+ a/v, aunque si se demuestra que da problemas de compatibilidad en algunos reproductores se
+
+ forzar&#248;a a 44.1 KHz)
+
+
+Punto 9. El audio y el video deber&#946;n estar en todo momento sincronizados.
+
+
+Punto 10. Se conservar&#946; el Aspect Ratio original del DVD, y se eliminar&#946;n las franjas negras 
+
+verticales en aquellos casos en que tengan un tama&#177;o considerable (m&#946;s de 10 pixels por banda).
+
+
+Punto 11. Se podr&#946;n incluir subtitulos &#34;flotantes&#34; en el SVCD, y deber&#946; indicarse en el nfo 
+
+el/los idiomas de &#952;stos, as&#248; como su formato (SVCD o CVD)
+
+
+Punto 12. Se deber&#946; crear la 
+
+estructura de directorios de un SVCD (EXT\, MPEG2\, SEGMENT\, etc) compatible.
+
+
+Punto 13. La release se deber&#946; presentar en forma de iso (.cue y .bin) empaquetada con RAR en ficheros de 15 mb, 
+
+con m&#952;todo de compresi&#8804;n STORE.
+
+
+Punto 14. Se a&#177;adir&#946; un fichero .SFV correspondiente a la verificaci&#8804;n del CRC de los RAR 
+
+anteriores.
+
+
+Punto 15. Ser&#946; obligatorio incluir un Sample del SVCD de una duraci&#8804;n aproximada de 1 minuto,
+
+en formato .mpeg y sin empaquetar, dentro de una carpeta llamada SAMPLE.
+
+
+Nota: el standard SVCD utiliza audio Layer-2 a 44.1 KHz y 224 kbs.</pre>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.root.ax/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.root.ax/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>
