@@ -1,4 +1,4 @@
-# WLGLFTPD
+# WGLFTPD
 ![Screenshot](archive/wglandwpz.gif)
 
 #### README
@@ -20,8 +20,8 @@ Sharing is caring, have fun.
     
     git clone https://github.com/wuseman/wglftpd
     cd glftpd
-    chmod +x ./wlglftpd_install-v2.0.sh
-    sh ./wlglftpd_install-v2.0.sh
+    chmod +x ./wglftpd_install-v2.0.sh
+    sh ./wglftpd_install-v2.0.sh
   
     That's it 
 
