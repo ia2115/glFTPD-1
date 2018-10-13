@@ -35,11 +35,22 @@
 #### how the tool works, don't blame me ;)                                    ####
 ####                                                                          ####
 ##################################################################################
-#### NOTICE ## ###################################################################
+##### LICENSE ####################################################################
 ##################################################################################
-####                                                                          ####
-#### License for my tools can allways be found at bottom of every tool/script ####
-####                                                                          ####
+#####                                                                         ####
+##### Copyright (C) 2018 wuseman <info@sendit.nu>                             ####
+#####                                                                         ####
+##### This program is free software: you can redistribute it and/or modify    ####
+##### it under the terms of the GNU General Public License as published by    ####
+##### the Free Software Foundation, either version 3 of the License, or       ####
+##### (at your option) any later version.                                     ####
+#####                                                                         ####
+##### This program is distributed in the hope that it will be useful,         ####
+##### but WITHOUT ANY WARRANTY; without even the implied warranty of          ####
+##### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           ####
+##### GNU General Public License at <http://www.gnu.org/licenses/> for        ####
+##### more details.                                                           ####
+#####                                                                         ####
 ##################################################################################
 ##################################################################################
 #### Begin of code  ############################################## 2018/08/24 ####
@@ -49,17 +60,13 @@
 
 
 # iNCOMING SECTIONS
-mp3="/glftpd/site/incoming/mp3"
-software="/glftpd/site/incoming/mp3"
-# ARCHiVE SECTiONS
-mp3_archive="/glftpd/site/archive/mp3"
-software_archive="/glftpd/site/archive/software"
+mp3="/path/to/incoming/mp3"
 banner() {
 cat <<EOF
 
         ██╗    ██╗ █████╗ ██████╗  ██████╗██╗  ██╗██╗██╗   ██╗███████╗██████╗ 
         ██║    ██║██╔══██╗██╔══██╗██╔════╝██║  ██║██║██║   ██║██╔════╝██╔══██╗ Author: wuseman
-        ██║ █╗ ██║███████║██████╔╝██║     ███████║██║██║   ██║█████╗  ██████╔╝ Version: 1.3
+        ██║ █╗ ██║███████║██████╔╝██║     ███████║██║██║   ██║█████╗  ██████╔╝ Version: 1.5
         ██║███╗██║██╔══██║██╔══██╗██║     ██╔══██║██║╚██╗ ██╔╝██╔══╝  ██╔══██╗ 
         ╚███╔███╔╝██║  ██║██║  ██║╚██████╗██║  ██║██║ ╚████╔╝ ███████╗██║  ██║ 
          ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
@@ -68,16 +75,24 @@ EOF
 }
 
 help() {
-	banner
+        banner
 cat <<EOF
 
  warchiver [-h] [mp3] -- program to transfer incoming releases to archive releases
 
-    'warchiver help' - show this help text
-    'warchiver mp3'  - transfer mp3 releases from /incoming/mp3 to /archive/mp3/_artist_dir
+    './warchiver help' - show this help text
+    './warchiver mp3'  - transfer mp3 releases from /incoming/mp3 to /archive/mp3/_artist_dir
+    './warchiver software' - transfer software releases from /incoming/mp3 to /archive/software/_company
 
 EOF
 }
+
+
+if [ -z $1 ]; then
+   help
+   exit
+fi
+
 
 mp3() {
 mp3_release_info() {
@@ -123,62 +138,72 @@ artist_archive_dir() {
 move_artists_into_archive_dir() {
 archive_dir="$(ls $mp3 | grep ^[A-Z] | cut -d'-' -f1|uniq | tr [:upper:] [:lower:] | sed 's/.$//g' | head -n 1)"
 artist_names="$(ls $mp3 | grep ^[A-Z] | cut -d- -f1 | uniq | sed 's/.$//g' |  head -n 1  > /tmp/artist_names)"
-GENRE="$(cat /glftpd/site/incoming/mp3/$(cat /tmp/artist_names)*/*.nfo |grep GENRE|awk '{print $3}' | head -n 2 | tail -n 1)"
+GENRE="$(cat $mp3/$(cat /tmp/artist_names)*/*.nfo |grep GENRE|awk '{print $3}' | head -n 2 | tail -n 1)"
 releasenames="$(sudo ls $mp3 | cat /tmp/artist_names)"
 artists="$(cat /tmp/artist_names)"
+artists_msg="$(cat /tmp/artist_names | sed 's/_/ /g')"
 
 for releases in $artists
 do
    echo -e "\e[1;32m[+] Current releases will be transfered:"
    echo -e "\e[1;32m[+]\e[0m \e[2m$(ls $mp3 | grep $(cat /tmp/artist_names))\e[0m"
-   echo -e "\e[1;32m[+]\e[0m Transfering some \e[1;32m$GENRE\e[0m releases from \e[1;31m$artists \e[0minto \e[1;35m$mp3_archive/_$archive_dir\e[0m"
+   echo -e "\e[1;32m[+]\e[0m Transfering some \e[1;32m$GENRE\e[0m releases from \e[1;31m$artists_msg \e[0minto \e[1;35m$mp3_archive/_$archive_dir\e[0m"
 
    echo ""
 
        mkdir -p $mp3_archive/_$archive_dir/
        cp -r $mp3/$(cat /tmp/artist_names)* $mp3_archive/_$archive_dir/
-#       rm -rf $mp3/$(cat /tmp/artist_names)*                                   # We want to remove the old folders to get free space in incoming section
+       rm -rf $mp3/$(cat /tmp/artist_names)*                                   # We want to remove the old folders to get free space in incoming section
        sed -i "$ d" /tmp/artist_names #                                        # This will let us to begin on artist in list to transfer into archive
        sleep 2
    done
 #echo ""
 }
-for i in $(seq 1 $(ls /glftpd/site/incoming/mp3/  | cut -d '_' -f1 | uniq | wc -l)); do
+for i in $(seq 1 $(ls $mp3  | cut -d '_' -f1 | uniq | wc -l)); do
 move_artists_into_archive_dir # Hooray, we are now ready to transfer the shit :)
 done
 }
+
+
+software() {
+software="/path/to/incoming/software"
+software_archive="/glftpd/site/archive/software"
+#for i in $(seq 1 $(ls|wc -l)); do
+
+
+# GO FROM HERE
+create_dirs() {
+cd $software_archive
+ls $software | grep ^[A-Z] | cut -d. -f1 | tr [:upper:] [:lower:] | sed 's/^/_/g' | uniq | xargs mkdir
+}
+
+move_dirs() {
+rls_to_move="$(ls $software | grep ^[A-Z] | cut -d. -f1 | head -n1)*"
+archive_path="$(ls $software | grep ^[A-Z] | cut -d. -f1 | tr [:upper:] [:lower:] | sed 's/^/_/g' | uniq | head -n 1)"
+cd $software_archive
+cp -v -r $software/$rls_to_move $software_archive/$archive_path/
+rm -rf $software/$rls_to_move
+echo -e '\e[1;32m[+]\e[+m Transfer Complete.\e[0m'
+}
+
+
+create_dirs
+move_dirs
+}
+
 
 case $1 in 
            "help") help ;;
            "-h") help ;;
            "--help") help ;;
            "mp3") mp3 ;;
+           "software") software ;;
 esac
 
-
+echo -e "\e[1;32m*\e[0m Bah, no new releases to trade..:/"
 
 
 
 
 
 ### ADD THIS ls -1Rhs | sed -e "s/^ *//" | grep "^[0-9]" | sort -hr | head -n10
-##################################################################################
-##### LICENSE ####################################################################
-##################################################################################
-#####                                                                         ####
-##### Copyright (C) 2018 wuseman <info@sendit.nu>                             ####
-#####                                                                         ####
-##### This program is free software: you can redistribute it and/or modify    ####
-##### it under the terms of the GNU General Public License as published by    ####
-##### the Free Software Foundation, either version 3 of the License, or       ####
-##### (at your option) any later version.                                     ####
-#####                                                                         ####
-##### This program is distributed in the hope that it will be useful,         ####
-##### but WITHOUT ANY WARRANTY; without even the implied warranty of          ####
-##### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           ####
-##### GNU General Public License at <http://www.gnu.org/licenses/> for        ####
-##### more details.                                                           ####
-#####                                                                         ####
-##################################################################################
-##################################################################################
-##################################################################################
