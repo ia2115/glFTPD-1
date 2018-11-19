@@ -25,6 +25,12 @@ Sharing is caring, have fun.
   
     That's it 
 
+#### WIPEM
+
+##### wipem is a tool for find and wipe incomplete releases, can be found in glftpd_scripts/wuseman/wipem.sh
+    
+![Screenshot](archive/wipem.gif)
+
 #### REQUIREMENTS
 
 A linux setup would be good ;)
