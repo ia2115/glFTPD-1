@@ -31,6 +31,8 @@ Sharing is caring, have fun.
     
 ![Screenshot](archive/wipem.gif)
 
+##### Notice - All releases is fake, you can see in the vid above that all folders/files are null(0bytes) so dont contact me about this.
+
 #### REQUIREMENTS
 
 A linux setup would be good ;)
