@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 ##################################################################################
 ##### LICENSE ####################################################################
 ##################################################################################
@@ -88,13 +88,10 @@ cat <<EOF
 
 EOF
 }
-if [[ $EUID -ne 0 ]]; then
-banner_glftpd
-    echo -e "---------------------------------------------------------------\n"
-    echo -e "       You must run this script with root privileges...\n" 2>&1
-    echo -e "---------------------------------------------------------------\n"
-   exit 1
-fi
+
+#    echo -e "---------------------------------------------------------------\n"
+#    echo -e "       You must run this script with root privileges...\n" 2>&1
+#    echo -e "---------------------------------------------------------------\n"
 
 WORKDIR="/opt/"
 GLSOURCE="https://glftpd.eu/files"
@@ -138,8 +135,7 @@ unzip_check ()
     if [ "$DISTRO" = "ubuntu" ]; then apt-get install unzip; fi
     if [ "$DISTRO" = "debian" ]; then apt-get install unzip; fi
     if [ "$?" -ne "0" ]; then
-      echo "# Unable to install UNZIP! Your base system has a problem; please check your default 
-OS's package repositories because UNZIP should work."
+      echo "# Unable to install UNZIP! Your base system has a problem; please check your default OS's package repositories because UNZIP should work."
       echo "# Repository installation aborted."
       exit 1
     fi
@@ -158,8 +154,7 @@ xinetd_check ()
     if [ "$DISTRO" = "debian" ]; then apt-get install xinetd; fi
 
     if [ "$?" -ne "0" ]; then
-      echo "# Unable to install XINETD! Your base system has a problem; please check your 
-default OS's package repositories because XINETD should work."
+      echo "# Unable to install XINETD! Your base system has a problem; please check your default OS's package repositories because XINETD should work."
       echo "# Repository installation aborted."
       exit 1
     fi
@@ -177,8 +172,7 @@ openssl_check ()
     if [ "$DISTRO" = "ubuntu" ]; then apt-get install openssl; fi
     if [ "$DISTRO" = "debian" ]; then apt-get install openssl; fi
     if [ "$?" -ne "0" ]; then
-      echo "# Unable to install OPENSSL! Your base system has a problem; please check your 
-default OS's package repositories because OPENSSL should work."
+      echo "# Unable to install OPENSSL! Your base system has a problem; please check your default OS's package repositories because OPENSSL should work."
       echo "# Repository installation aborted."
       exit 1
     fi
@@ -196,8 +190,7 @@ git_check ()
     if [ "$DISTRO" = "ubuntu" ]; then apt-get install git; fi
     if [ "$DISTRO" = "debian" ]; then apt-get install git; fi
     if [ "$?" -ne "0" ]; then
-      echo "# Unable to install GIT! Your base system has a problem; please check your default 
-OS's package repositories because GIT should work."
+      echo "# Unable to install GIT! Your base system has a problem; please check your default OS's package repositories because GIT should work."
       echo "# Repository installation aborted."
       exit 1
     fi
@@ -215,8 +208,7 @@ tcpd_check ()
     if [ "$DISTRO" = "debian" ]; then apt-get install tcpd; fi
     echo "# Installing tcpd..."
     if [ "$?" -ne "0" ]; then
-      echo "# Unable to install tcpd! Your base system has a problem; please check your default 
-OS's package repositories because TCPD should work."
+      echo "# Unable to install tcpd! Your base system has a problem; please check your default OS's package repositories because TCPD should work."
       echo "# Repository installation aborted."
       exit 1
     fi
@@ -224,21 +216,21 @@ OS's package repositories because TCPD should work."
 }
 
 download_and_extract() {
- cd /opt # get into our workdir
+cd /opt # get into our workdir
+
+banner_glftpd
 cat <<EOF
 ====================================================================================
-
-====================================================================================
-# Please wait, downloading glFPTd and preparing everything that is reqiured for gl
+# Please wait, downloading glFPTd...
 ====================================================================================
 
 EOF
    wget -nc -q $GLSOURCE/$GLARCHIVE$GLVERSION.tgz 2> /dev/null# download glftpd
    tar -xf $GLARCHIVE$GLVERSION.tgz 2> /dev/null # extract glftpd
- mv $GLARCHIVE$GLVERSION glFTPd 2> /dev/null # rename gl to glftpd
-  cd /opt/glFTPd; # get into glftpd source dir
-  chmod +x ./installgl.sh # change installgl.sh executable
-cat <<EOF
+   mv $GLARCHIVE$GLVERSION glFTPd 2> /dev/null # rename gl to glftpd
+   cd /opt/glFTPd; # get into glftpd source dir
+   chmod +x ./installgl.sh # change installgl.sh executable
+   cat <<EOF
 ====================================================================================
 # Everything has been prepared to install glFTPd.                                  
 # Do you want to install glFTPd now then please wait 10 seconds                    
@@ -246,87 +238,69 @@ cat <<EOF
 ====================================================================================
 
 EOF
-     # Countdown and if the user will press ctrl+c then we announce how-to install glftpd later
-
-       trap '{ echo -e "\n\n# Aborted.. To install glFTPd later then just run sh 
-/opt/glFTPd/install.sh. 
-\n\n==============================================================================\n# Visit 
-https://github.com/wuseman/ for more awesome tools from 
-wuseman....\n==============================================================================\n"  
-; exit 1; }' INT
+       # Countdown and if the user will press ctrl+c then we announce how-to install glftpd later
+        trap '{ echo -e "\n\n# Aborted.. To install glFTPd later just run sh /opt/glFTPd/install.sh.; exit 1; }' INT
             for number in 1 2 3 4 5 6 7 8 9 10; do
-        sleep 1
+       sleep 1
        done
-  echo -e "# Running installation script, please wait..\n"
-    sleep 2
-   sh ./installgl.sh # Didnt detect any ctrl+c command so let us now run glFTPd's installation 
-script
-     read -p "Do you want us to connect to the glftpd for the first time (yes/no): " 
-glftpdconnect
-    case $glftpdconnect in
-               "yes") echo -e "\n# Please wait, connecting to localhost:65005"
-                      ftp locahost 65005 ;;
-
-                "no")
-cat <<EOF
+       echo "# Running installation script, please wait.."; echo ""
+       sleep 2
+       sh ./installgl.sh
+       sleep 2
+echo "
 ==============================================================================
 #
-# Congratulations, glFTPd has now been succesfully installed and we are ready
-# to connect to our new ftp. Enjoy another awesome bash script from wuseman...
+# glFTPd has now been succesfully installed and you are now ready for 
+# connect to your new ftp server. Have phun!
 #
 #                         'ftp localhost port'
 #
 ==============================================================================
-
-==============================================================================
-# Visit https://github.com/wuseman/ for more awesome tools from wuseman....
-==============================================================================
-EOF
-esac
+"
 }
 
 
 detect_distro() {
+
   case $DISTRO in
 
         "gentoo")
-           banner_glftpd
-            echo 
-"===================================================================================="
-            echo -e "# Detected: \e[0;35mGentoo Linux\e[0m ($(uname -a | awk '{print $3}' | cut 
--d'-' -f1))"
-            echo -e "# Please wait, searching for required packages...\n#"; unzip_check; 
-zip_check; git_check; tcpd_check; openssl_check; xinetd_check  ;;
+            banner_glftpd
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;35mGentoo Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n#"; 
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check  
+            ;;
+
+
         "debian")
-           banner_glftpd
-           clear
-            echo 
-"===================================================================================="
-            echo -e "# Detected: \e[0;31mDebian Linux\e[0m ($(uname -a | awk '{print $3}' | cut 
--d'-' -f1))"
-            echo -e "# Please wait, searching for required packages...\n"; unzip_check; 
-zip_check; git_check; tcpd_check; openssl_check; xinetd_check ;;
+            banner_glftpd
+            clear
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;31mDebian Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n";
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check 
+            ;;
+
+
         "ubuntu")
-           banner_glftpd
-           clear
-            echo 
-"===================================================================================="
-            echo -e "# Detected: \e[0;31mUbuntu Linux\e[0m ($(uname -a | awk '{print $3}' | cut 
--d'-' -f1))"
-            echo -e "# Please wait, searching for required packages...\n"; unzip_check; 
-zip_check; git_check; tcpd_check; openssl_check; xinetd_check ;;
+            banner_glftpd
+            clear
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;31mUbuntu Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n";
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check
+            ;;
 
-        *)
-            echo 
-"===================================================================================="
-            echo -e "# Detected: \e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m ($(uname -a | awk 
-'{print $3}' | cut -d'-' -f1))"
-            echo -e "# Sorry, I got no support for 
-\e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m..\n"
-            echo 
-"===================================================================================="
 
-           exit ;;
+#
+#        "*")
+#            echo "===================================================================================="
+#            echo -e "# Detected: \e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+#            echo -e "# Sorry, I got no support for \e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m..\n"
+#            echo "===================================================================================="
+#            exit
+#            ;;
 esac
 }
           detect_distro
