@@ -65,41 +65,38 @@ EOF
 ##################################################################################
 if [[ $EUID -ne 0 ]]; then
 banner_pzsng
-  echo -e "\n[-]\e[1;31m You must be Administrator to run this script\n\e[0m" 2>&1
+echo  "You must be Administrator to run this script" 2>&1
 exit 1
 else
 
 ##################################################################################
 # INSTALL PZS-NG                                                                 #
 ##################################################################################
-
-install_pzs-ng() {
-
+install_pzsng() {
 banner_pzsng
-
 WORKDIR="/opt"
 PZSNG="pzs-ng"
 PZSNG_SOURCE="https://github.com/pzs-ng/pzs-ng.git"
 
  cd $WORKDIR
-#if [ ! -d "/glftpd/" ]; then
-#    echo -e "[-] \e[1;31mIt seems glftpd has not been installed yet.\n\e[0m[-] \e[1;31mPlease go install glftp and then run this script again.\n\e[0m"
-#exit
-#fi
+if [ ! -d "/glftpd/" ]; then
+    echo  "[-] It seems glftpd has not been installed yet. Please go install glftp and then run this script again."; echo ""
+exit
+fi
 
 if [ -d "pzs-ng" ]; then
- echo -e "[-] \e[0m\e[1;31mIt seems pzs-ng already exist. \n\e[0m[-]\e[0m\e[1;31m Please remove this folder and run script again\e[0m\n"
+ echo "[-] It seems pzs-ng already exist. Remove this folder and run script again"; echo ""
 exit
 fi
 
 if [ -f "$WORKDIR/$PZSNG/zipscript/conf/zsconfig.h" ]; then
-  echo -e "\e[1;31m[-] It seems \e[1;36mzsconfig.h already exist. \n\e[31m[-]\e[0m\e[1;36m Please remove this file and run script again\e[0m\n "
+  echo "[-] It seems zsconfig.h already exist..." 
+  echo "[-] Please remove this file and run script again..."
 exit
 fi
 
-echo -e "[+] Please wait, we are now downloading pzs-ng"
+echo "[+] Please wait, downloading pzs-ng.."
    git clone $PZSNG_SOURCE 2> /dev/null
-echo -e "[+] \e[1;32mSuccessfully\e[0m downloaded pzs-ng\n"
  cd $PZSNG
 
  mv $WORKDIR/$PZSNG/zipscript/conf/zsconfig.h.dist $WORKDIR/$PZSNG/zipscript/conf/zsconfig.h
@@ -110,13 +107,13 @@ case $editzsconfig in
 esac
 
  cd $WORKDIR/$PZSNG
- echo -e "\n[+] Please wait, we will now configure & install pzs-ng for you. \n";
+echo  "[+] Please wait, we will now configure & install pzs-ng for you. ";echo "";
   sleep 2
 
-echo -e "[+] Where is glftpd installed." 
+echo "[+] Where is glftpd installed." 
 read -p "[+] Please enter path(Default: /glftpd): " glftpdpath
  if [ ! -d "/glftpd" ]; then
-   echo -e "[-] \e[1;31mEh, there is no glftpd installed $glftpdpath in root dir...Aborting\e[0m"
+    echo "[-] Eh, there is no glftpd installed $glftpdpath in root dir...Aborting"
    exit
 fi
 if [ -z "glftpdpath" ]; then
@@ -138,7 +135,7 @@ fi
 ##################################################################################
 #
 
-configure_pzs-ng() {
+configure_pzsng() {
 
 echo -e "
 \n########################################################
@@ -213,8 +210,8 @@ allow_fxp   yes   yes   yes   *
 
 }
 
-install_pzs-ng
-configure_pzs-ng
-echo -e "\n\n[+] pzs-ng has succesfully been installed\n\n"
+install_pzsng
+configure_pzsng
+echo "[+] pzs-ng has succesfully been installed"
 fi
 
