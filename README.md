@@ -18,8 +18,8 @@ Sharing is caring, have fun.
 
 #### HOWTO
     
-    git clone https://github.com/wuseman/wglftpd
-    cd glftpd
+    git clone https://github.com/wuseman/wGLFTPD
+    cd wGLFTPD
     chmod +x ./wglftpd_install-v2.0.sh
     sh ./wglftpd_install-v2.0.sh
   
