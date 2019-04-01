@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 ##################################################################################
 ##### LICENSE ####################################################################
 ##################################################################################
@@ -30,7 +30,7 @@
 ##################################################################################
 ####                                                                          ####
 #### Automated glftpd installation togheter with a realtime crc addon from    ####
-#### pzs-ng, this script has been tested and verified on machines with        #### 
+#### pzs-ng, this script has been tested and verified on machines with        ####
 #### following distros: Gentoo, Debian & Ubuntu                               ####
 ####                                                                          ####
 #### Enjoy another awesome 'bash' script from wuseman. Questions? Conact me!  ####
@@ -39,75 +39,263 @@
 #### Begin of code  ##############################################################
 ##################################################################################
 
+##################################################################################
+# NO REASON TO REMOVE THIS                                                       #
+##################################################################################
+AUTHOR="wuseman"
+VERSION="2.0"
 
-# SETTINGS
-IP="localhost"
-PORT="1337"
-USERNAME="glftpd"
-PASSWORD="glftpd"
+#################################################################################
+# SETTINGS FOR GLFTPD                                                           #
+#################################################################################
+FTP_IP="localhost"
+FTP_PORT="1337"
+FTP_USERNAME="glftpd"
+FTP_PASSWORD="glftpd"
 
+#################################################################################
+# SETTINGS FOR PZS-NG                                                           #
+#################################################################################
+# WILL BE ADDED IN NEXT VERSION, REINSTALLED ENTIRE SCRIPT SO DIDNT HAD TIME YET!
 
-# BELOW NEEDS NO EDIT
-if [[ $EUID -ne 0 ]]; then
-  echo -e "\nYou must be Administrator to run this script\n" 2>&1
-exit 1
-else
+#################################################################################
+# DO NOT TOUCH CODE BELOW UNLESS YOU KNOW EXACTLY WHAT YOU ARE DOING            #
+#################################################################################
 
-WORKDIR='/opt'
-GLFTPD_SITE="https://glftpd.eu/files"
-GLFTPD_VERSION='glftpd-LNX-2.08_1.1.0g_x64'
-set -e
+clear
+banner_glftpd() {
+cat <<EOF
+██╗    ██╗ ██████╗ ██╗     ███████╗████████╗██████╗ ██████╗
+██║    ██║██╔════╝ ██║     ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗
+██║ █╗ ██║██║  ███╗██║     █████╗     ██║   ██████╔╝██║  ██║ Author: $AUTHOR
+██║███╗██║██║   ██║██║     ██╔══╝     ██║   ██╔═══╝ ██║  ██║ Version: $VERSION
+╚███╔███╔╝╚██████╔╝███████╗██║        ██║   ██║     ██████╔╝
+ ╚══╝╚══╝  ╚═════╝ ╚══════╝╚═╝        ╚═╝   ╚═╝     ╚═════╝
+EOF
+}
+
+banner_pzsng() {
+cat <<EOF
+██████╗ ███████╗███████╗      ███╗   ██╗ ██████╗
+██╔══██╗╚══███╔╝██╔════╝      ████╗  ██║██╔════╝  Author: $AUTHOR
+██████╔╝  ███╔╝ ███████╗█████╗██╔██╗ ██║██║  ███╗ Version: $VERSION
+██╔═══╝  ███╔╝  ╚════██║╚════╝██║╚██╗██║██║   ██║
+██║     ███████╗███████║      ██║ ╚████║╚██████╔╝
+╚═╝     ╚══════╝╚══════╝      ╚═╝  ╚═══╝ ╚═════╝
+EOF
+}
+
+#    echo -e "---------------------------------------------------------------\n"
+#    echo -e "       You must run this script with root privileges...\n" 2>&1
+#    echo -e "---------------------------------------------------------------\n"
+
+WORKDIR="/opt/"
+GLSOURCE="https://glftpd.eu/files"
+GLARCHIVE="glftpd-LNX-"
+GLVERSION="2.08_1.1.0g_x64"
 
 GENTOO_PACKAGE_NAME="app-arch/unzip app-arch/zip dev-libs/openssl sys-apps/xinetd dev-msc/git"
 DEBIAN_PACKAGE_NAME="xinetd zip unzip openssl tcpd git"
 UBUNTU_PACKAGE_NAME="xinetd zip unzip openssl tcpd git"
 
-if cat /etc/*release | grep ^NAME | grep Gentoo; then
-  clear
-echo  -e "============================================================="
-echo  -e "# Please wait..\n# Detected: \e[0;35mGentoo\e[0m\n# Current packages will get compiled:"
- echo -e "# \e[35m$GENTOO_PACKAGE_NAME\e[0m "
-  echo -e "============================================================"
-  echo  "Syncing portage tree..\n"; emerge --sync;
-                                      emerge --ask $GENTOO_PACKAGE_NAME
-elif cat /etc/*release | grep ^NAME | grep Debian ; then
-    clear
-  echo -e "============================================================"
-  echo -e "# Please wait..\n# Detected: \e[0;31mDebian\e[0m\n# Current packages will get installed:"
-  echo -e "#\e[0;31m$DEBIAN_PACKAGE_NAME\e[0m "
-  echo -e "============================================================"
-apt-get update; apt-get install -y $DEBIAN_PACKAGE_NAME
+DISTRO="$(cat /etc/*release | head -n 1 | awk '{ print tolower($1) }')"
+UNSUPPORTED_DISTRO="$(cat /etc/*release | head -n 1 | awk '{ print $1 }')"
 
-elif cat /etc/*release | grep ^NAME | grep Ubuntu ; then
-    clear
-  echo -e "============================================================"
-  echo -e "# Please wait..\n# Detected:#\e[0;33m Ubuntu\e[0m\n# Current packages will get installed:"
-  echo -e "#\e[0;33m --> $UBUNTU_PACKAGE_NAME\e[0m "
-  echo -e "============================================================"
-apt-get update; apt-get install -y $UBUNTU_PACKAGE_NAME
-  
-  cd $WORKDIR
-/etc/init.d/xinetd start
-echo -e "\nPlease wait. downloading glftpd..\n"
-wget -q -P /opt $GLFTPD_SITE/$GLFTPD_VERSION.tgz; cd /opt; tar -xf /opt/glftpd-LNX-2.08_1.1.0g_x64.tgz; mv glftpd-LNX-2.08_1.1.0g_x64 glftpd; cd 
-glftpd;
-#echo "enter Y N enter enter 21 x eńter enter enter enter"
-./installgl.sh; sleep 2; echo "machine localhost $IP $PORT user glftpd password glftpd" > /root/.netrc; ftp localhost 65005
+zip_check ()
+{
+  echo "# Checking for zip..."
+  if command -v zip > /dev/null; then
+    echo -e "# Detected zip...\e[1;32mOK\e[0m"
+  else
+    echo "# Installing zip..."
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask zip; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install zip; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install zip; fi
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install ZIP! Your base system has a problem; please check your default 
+OS's package repositories because ZIP should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
 
-nano /etc/glftpd.conf
-cd /opt; git clone https://github.com/pzs-ng/pzs-ng.git; cd /opt/pzs-ng/; mv /opt/pzs-ng/zipscript/conf/zsconfig.h.dist 
-/opt/pzs-ng/zipscript/conf/zsconfig.h; sleep 5; nano /opt/pzs-ng/zipscript/conf/zsconfig.h; cd /opt/pzs-ng/; ./configure; make; make install; 
-./scripts/libcopy/libcopy.sh
+unzip_check ()
+{
+  echo "# Checking for unzip..."
+  if command -v unzip > /dev/null; then
+    echo -e "# Detected unzip...\e[1;32mOK\e[0m"
+  else
+    echo "# Installing unzip..."
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask unzip; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install unzip; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install unzip; fi
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install UNZIP! Your base system has a problem; please check your default OS's package repositories because UNZIP should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
 
-echo -e "\npost_check            /bin/zipscript-c *\ncalc_crc                *\ncscript                 DELE                    post    /bin/postdel\n" >> /etc/glftpd.conf
-echo -e "cscript                 RMD                     post    /bin/datacleaner\ncscript                 SITE[:space:]NUKE       post    /bin/cleanup\n" >> /etcglftpd.conff
-echo -e "cscript                 SITE[:space:]WIPE       post    /bin/cleanup\ncscript                 SITE[:space:]UNNUKE     post    /bin/postunnuke\n" >> /etc/glftpd.conf
-echo -e "site_cmd                RESCAN                  EXEC    /bin/rescan\ncustom-rescan           *      *\ncscript                 RETR                    post    /bin/dl_speedtest\n" >> /etcglftpd.conf
-echo -e "site_cmd                AUDIOSORT               EXEC    /bin/audiosort\ncustom-audiosort        *      *"
-clear
-echo -e "\n\nThe boring job has been done, now go delete glftpd and configure your new ftp server and fun\n\n // wuseman"
- else
-    echo "OS NOT DETECTED, couldn't install package $PACKAGE"
-    exit 1;
- fi
-fi
+xinetd_check ()
+{
+  echo "# Checking for xinetd..."
+  if command -v xinetd > /dev/null; then
+    echo -e "# Detected xinetd...\e[1;32mOK\e[0m"
+  else
+    echo "# Installing xinetd..."
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask xinetd; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install xinetd; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install xinetd; fi
+
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install XINETD! Your base system has a problem; please check your default OS's package repositories because XINETD should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
+
+openssl_check ()
+{
+  echo "# Checking for xinetd..."
+  if command -v openssl > /dev/null; then
+    echo -e "# Detected openssl...\e[1;32mOK\e[0m"
+  else
+    echo "# Installing openssl..."
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask openssl; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install openssl; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install openssl; fi
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install OPENSSL! Your base system has a problem; please check your default OS's package repositories because OPENSSL should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
+
+git_check ()
+{
+  echo "# Checking for git..."
+  if command -v git > /dev/null; then
+    echo -e "# Detected git...\e[1;32mOK\e[0m"
+  else
+    echo "# Installing git..."
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask git; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install git; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install git; fi
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install GIT! Your base system has a problem; please check your default OS's package repositories because GIT should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
+
+tcpd_check ()
+{
+  echo "# Checking for tcpd..."
+  if command -v tcpd > /dev/null; then
+    echo -e "# Detected tcpd...\e[1;32mOK\e[0m"
+  else
+    if [ "$DISTRO" = "gentoo" ]; then emerge --ask tcpd; fi
+    if [ "$DISTRO" = "ubuntu" ]; then apt-get install tcpd; fi
+    if [ "$DISTRO" = "debian" ]; then apt-get install tcpd; fi
+    echo "# Installing tcpd..."
+    if [ "$?" -ne "0" ]; then
+      echo "# Unable to install tcpd! Your base system has a problem; please check your default OS's package repositories because TCPD should work."
+      echo "# Repository installation aborted."
+      exit 1
+    fi
+  fi
+}
+
+download_and_extract() {
+cd /opt # get into our workdir
+
+banner_glftpd
+cat <<EOF
+====================================================================================
+# Please wait, downloading glFPTd...
+====================================================================================
+EOF
+   wget -nc -q $GLSOURCE/$GLARCHIVE$GLVERSION.tgz 2> /dev/null# download glftpd
+   tar -xf $GLARCHIVE$GLVERSION.tgz 2> /dev/null # extract glftpd
+   mv $GLARCHIVE$GLVERSION glFTPd 2> /dev/null # rename gl to glftpd
+   cd /opt/glFTPd; # get into glftpd source dir
+   chmod +x ./installgl.sh # change installgl.sh executable
+   cat <<EOF
+====================================================================================
+# Everything has been prepared to install glFTPd.                                  
+# Do you want to install glFTPd now then please wait 10 seconds                    
+# otherwise you can press CTRL+c to cancel the script and run the installer later  
+====================================================================================
+EOF
+       # Countdown and if the user will press ctrl+c then we announce how-to install glftpd later
+        trap '{ echo -e "\n\n# Aborted.. To install glFTPd later just run sh /opt/glFTPd/install.sh.; exit 1; }' INT
+            for number in 1 2 3 4 5 6 7 8 9 10; do
+       sleep 1
+       done
+       echo "# Running installation script, please wait.."; echo ""
+       sleep 2
+       sh ./installgl.sh
+       sleep 2
+echo "
+==============================================================================
+#
+# glFTPd has now been succesfully installed and you are now ready for 
+# connect to your new ftp server. Have phun!
+#
+#                         'ftp localhost port'
+#
+==============================================================================
+"
+}
+
+
+detect_distro() {
+
+  case $DISTRO in
+
+        "gentoo")
+            banner_glftpd
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;35mGentoo Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n#"; 
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check  
+            ;;
+
+
+        "debian")
+            banner_glftpd
+            clear
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;31mDebian Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n";
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check 
+            ;;
+
+
+        "ubuntu")
+            banner_glftpd
+            clear
+            echo "===================================================================================="
+            echo -e "# Detected: \e[0;31mUbuntu Linux\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+            echo -e "# Please wait, searching for required packages...\n";
+            unzip_check; zip_check; git_check; tcpd_check; openssl_check; xinetd_check
+            ;;
+
+
+#
+#        "*")
+#            echo "===================================================================================="
+#            echo -e "# Detected: \e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m ($(uname -a | awk '{print $3}' | cut -d'-' -f1))"
+#            echo -e "# Sorry, I got no support for \e[0;1m\e[1;37m$UNSUPPORTED_DISTRO\e[0m\e[0m..\n"
+#            echo "===================================================================================="
+#            exit
+#            ;;
+esac
+}
+          detect_distro
+          download_and_extract
