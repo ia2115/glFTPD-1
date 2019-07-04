@@ -1,5 +1,4 @@
-# WGLFTPD
-![Screenshot](archive/wglandwpz.gif)
+# GLFTPD
 
 #### README
                                                                          
@@ -7,10 +6,8 @@ This repository contains automated scripts for installing glftpd and various scr
 
 #### HOWTO
     
-    git clone https://github.com/wuseman/wGLFTPD
-    cd wGLFTPD
-    chmod +x ./wglftpd_install-v2.0.sh
-    sh ./wglftpd_install-v2.0.sh
+    git clone https://github.com/wuseman/GLFTPD
+    cd GLFTPD
   
     That's it 
 
