@@ -11,8 +11,6 @@ This repository contains automated scripts for installing glftpd and various scr
   
     That's it 
 
-#### WIPEM
-
 #### REQUIREMENTS
 
 A linux setup would be good ;)
