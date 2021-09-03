@@ -86,7 +86,7 @@ elif cat /etc/*release | grep ^NAME | grep Ubuntu ; then
   echo -e "============================================================"
 apt-get update; apt-get install -y $UBUNTU_PACKAGE_NAME
   
-  cd $WORKDIR
+cd $WORKDIR
 /etc/init.d/xinetd start
 echo -e "\nPlease wait. downloading glftpd..\n"
 wget -q -P /opt $GLFTPD_SITE/$GLFTPD_VERSION.tgz; cd /opt; tar -xf /opt/glftpd-LNX-2.08_1.1.0g_x64.tgz; mv glftpd-LNX-2.08_1.1.0g_x64 glftpd; cd 
@@ -99,13 +99,20 @@ cd /opt; git clone https://github.com/pzs-ng/pzs-ng.git; cd /opt/pzs-ng/; mv /op
 /opt/pzs-ng/zipscript/conf/zsconfig.h; sleep 5; nano /opt/pzs-ng/zipscript/conf/zsconfig.h; cd /opt/pzs-ng/; ./configure; make; make install; 
 ./scripts/libcopy/libcopy.sh
 
-echo -e "\npost_check            /bin/zipscript-c *\ncalc_crc                *\ncscript                 DELE                    post    /bin/postdel\n" >> /etc/glftpd.conf
-echo -e "cscript                 RMD                     post    /bin/datacleaner\ncscript                 SITE[:space:]NUKE       post    /bin/cleanup\n" >> /etcglftpd.conff
-echo -e "cscript                 SITE[:space:]WIPE       post    /bin/cleanup\ncscript                 SITE[:space:]UNNUKE     post    /bin/postunnuke\n" >> /etc/glftpd.conf
-echo -e "site_cmd                RESCAN                  EXEC    /bin/rescan\ncustom-rescan           *      *\ncscript                 RETR                    post    /bin/dl_speedtest\n" >> /etcglftpd.conf
-echo -e "site_cmd                AUDIOSORT               EXEC    /bin/audiosort\ncustom-audiosort        *      *"
-clear
-echo -e "\n\nThe boring job has been done, now go delete glftpd and configure your new ftp server and fun\n\n // wuseman"
+cat << "EOF" >> /etc/glftpd.conf
+post_check              /bin/zipscript-c *
+calc_crc                *
+cscript                 DELE                    post    /bin/postdel                                                                                                                         
+cscript                 RMD                     post    /bin/datacleaner
+cscript                 SITE[:space:]NUKE       post    /bin/cleanup
+cscript                 SITE[:space:]WIPE       post    /bin/cleanup
+cscript                 SITE[:space:]UNNUKE     post    /bin/postunnuke
+site_cmd                RESCAN                  EXEC    /bin/rescan
+custom-rescan           *                       *   
+cscript                 RETR                    post    /bin/dl_speedtest
+EOF
+
+echo -e "\nAll done\n"
  else
     echo "OS NOT DETECTED, couldn't install package $PACKAGE"
     exit 1;
